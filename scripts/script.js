@@ -317,14 +317,14 @@ function createFeaturedProductCard(product) {
                         </a>
                         
                         <div class="card-actions uk-transition-fade uk-position-top-right uk-padding-small">
-                             <a class="uk-icon-button js-add-to-favorites" href="#" uk-icon="heart" title="Add to favorites"></a>
-                            <button class="uk-icon-button uk-margin-small-left js-add-to-cart" uk-icon="cart" title="Add to Cart"></button>
+                             <a class="uk-icon-button js-add-to-favorites tm-shine" href="#" uk-icon="heart" title="Add to favorites"></a>
+                            <button class="uk-icon-button uk-margin-small-left  tm-shine js-add-to-cart" uk-icon="cart" title="Add to Cart"></button>
                         </div>
 
-                        <div class="uk-position-top-left uk-padding-xsmall">
-                            ${product.newArrival ? '<span class="uk-label uk-label-success">New</span>' : ''}
-                            ${product.topSelling ? '<span class="uk-label uk-label-warning">Top</span>' : ''}
-                            ${onSale ? '<span class="uk-label uk-label-danger">Sale</span>' : ''}
+                        <div class="card-actions uk-transition-fade uk-position-top-left uk-padding-small w-1/2">
+                            ${product.topSelling ? '<span class="uk-label uk-label-warning">Top </span>' : ''}
+                                ${product.newArrival ? '<span class="uk-label uk-label-success ">New</span>' : ''}
+                                ${product.outStock ? '<span class="uk-label uk-label-danger">Out of stock</span>' : ''}
                         </div>
 
                         <div class="content-overlay">
