@@ -1,0 +1,2655 @@
+[
+    {
+        "title": "Modern Linen Ottoman",
+        "category": "Ottomans",
+        "subcategory": "Footstool",
+        "price": 436.72,
+        "oldPrice": 524.06,
+        "inStock": 22,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted modern linen ottoman designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/ottoman,footstool?lock=0"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Modern Plush velvet Ottoman",
+        "category": "Ottomans",
+        "subcategory": "Storage Ottoman",
+        "price": 383.45,
+        "oldPrice": 460.14,
+        "inStock": 14,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted modern plush velvet ottoman designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Modern%20Plush%20velvet%20Ottoman"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9a4",
+                "username": "customer_873",
+                "comment": "My cat loves it more than I do!",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9a5",
+                "username": "customer_142",
+                "comment": "Excellent craftsmanship, you can tell it\u2019s built to last.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Vintage Marble TV Unit",
+        "category": "TV Units",
+        "subcategory": "Entertainment Center",
+        "price": 218.03,
+        "oldPrice": 261.64,
+        "inStock": 32,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted vintage marble tv unit designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/TV Units2/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9a6",
+                "username": "customer_811",
+                "comment": "Packaging was very secure, no scratches or damage.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9a7",
+                "username": "customer_330",
+                "comment": "The wood finish is absolutely stunning.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Industrial Plush velvet Bed",
+        "category": "Beds",
+        "subcategory": "Super King",
+        "price": 612.71,
+        "oldPrice": 735.25,
+        "inStock": 15,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted industrial plush velvet bed designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Beds3/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9a8",
+                "username": "customer_207",
+                "comment": "Great value for money compared to high-street brands.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9a9",
+                "username": "customer_943",
+                "comment": "A bit overpriced, but solid.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Contemporary Linen Sideboard",
+        "category": "Sideboards",
+        "subcategory": "Display Cabinet",
+        "price": 334.29,
+        "oldPrice": 401.15,
+        "inStock": 45,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted contemporary linen sideboard designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/sideboard,credenza?lock=4"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9aa",
+                "username": "customer_258",
+                "comment": "The fabric feels very premium and durable.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9ab",
+                "username": "customer_575",
+                "comment": "Delivery was fast and assembly was easy.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9ac",
+                "username": "customer_886",
+                "comment": "The wood finish is absolutely stunning.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Mid-Century Pine Chair",
+        "category": "Chairs",
+        "subcategory": "Dining Chair",
+        "price": 164.47,
+        "oldPrice": 197.36,
+        "inStock": 6,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted mid-century pine chair designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/chair,armchair,seating?lock=5"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9ad",
+                "username": "customer_304",
+                "comment": "Wait time for delivery was long, but worth it.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9ae",
+                "username": "customer_727",
+                "comment": "Exactly as pictured on the website.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Mid-Century Walnut Wardrobe",
+        "category": "Wardrobes",
+        "subcategory": "2-Door Wardrobe",
+        "price": 853.43,
+        "oldPrice": 1024.12,
+        "inStock": 41,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted mid-century walnut wardrobe designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/closet,wardrobe,cabinet?lock=6"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9af",
+                "username": "customer_353",
+                "comment": "Very modern and sleek design. Five stars.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Contemporary Glass Armchair",
+        "category": "Armchairs",
+        "subcategory": "Wingback Chair",
+        "price": 135.16,
+        "oldPrice": 162.19,
+        "inStock": 0,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted contemporary glass armchair designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Armchairs7/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9b0",
+                "username": "customer_595",
+                "comment": "Took two people to assemble, but the instructions were clear.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9b1",
+                "username": "customer_682",
+                "comment": "Great quality, highly recommend!",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Classic Pine TV Unit",
+        "category": "TV Units",
+        "subcategory": "Wall Mounted",
+        "price": 895.34,
+        "oldPrice": 1074.41,
+        "inStock": 10,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted classic pine tv unit designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/TV Units8/800/600"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Luxury Glass Bed",
+        "category": "Beds",
+        "subcategory": "Bunk Bed",
+        "price": 451.25,
+        "oldPrice": 541.5,
+        "inStock": 4,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted luxury glass bed designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Luxury%20Glass%20Bed"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Minimalist Plush velvet Armchair",
+        "category": "Armchairs",
+        "subcategory": "Recliner",
+        "price": 676.85,
+        "oldPrice": 812.22,
+        "inStock": 1,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted minimalist plush velvet armchair designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/armchair,reading-nook?lock=10"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Industrial Glass Table",
+        "category": "Tables",
+        "subcategory": "Console Table",
+        "price": 310.4,
+        "oldPrice": 372.48,
+        "inStock": 50,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted industrial glass table designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/dining-table,desk,coffee-table?lock=11"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9b2",
+                "username": "customer_423",
+                "comment": "Great value for money compared to high-street brands.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9b3",
+                "username": "customer_932",
+                "comment": "Fits the aesthetic of my apartment perfectly.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Mid-Century Marble TV Unit",
+        "category": "TV Units",
+        "subcategory": "Lowboard",
+        "price": 373.63,
+        "oldPrice": 448.36,
+        "inStock": 9,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted mid-century marble tv unit designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Mid-Century%20Marble%20TV%20Unit"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9b4",
+                "username": "customer_378",
+                "comment": "Great quality, highly recommend!",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Classic Teak TV Unit",
+        "category": "TV Units",
+        "subcategory": "Corner TV Unit",
+        "price": 889.95,
+        "oldPrice": 1067.94,
+        "inStock": 49,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted classic teak tv unit designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Classic%20Teak%20TV%20Unit"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9b5",
+                "username": "customer_549",
+                "comment": "Great value for money compared to high-street brands.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9b6",
+                "username": "customer_411",
+                "comment": "Fits the aesthetic of my apartment perfectly.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9b7",
+                "username": "customer_312",
+                "comment": "My cat loves it more than I do!",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Industrial Teak Ottoman",
+        "category": "Ottomans",
+        "subcategory": "Pouffe",
+        "price": 924.04,
+        "oldPrice": 1108.85,
+        "inStock": 3,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted industrial teak ottoman designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Industrial%20Teak%20Ottoman"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9b8",
+                "username": "customer_936",
+                "comment": "Perfect for my home office setup.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9b9",
+                "username": "customer_317",
+                "comment": "Very modern and sleek design. Five stars.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9ba",
+                "username": "customer_775",
+                "comment": "The cushions are quite firm but very supportive.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Vintage Leather Desk",
+        "category": "Desks",
+        "subcategory": "Writing Desk",
+        "price": 668.42,
+        "oldPrice": 802.1,
+        "inStock": 34,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted vintage leather desk designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/office-desk,workspace?lock=15"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9bb",
+                "username": "customer_223",
+                "comment": "Great value for money compared to high-street brands.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9bc",
+                "username": "customer_798",
+                "comment": "Took two people to assemble, but the instructions were clear.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9bd",
+                "username": "customer_168",
+                "comment": "Perfect for my home office setup.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Vintage Walnut Sideboard",
+        "category": "Sideboards",
+        "subcategory": "2-Door Sideboard",
+        "price": 821.86,
+        "oldPrice": 986.23,
+        "inStock": 31,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted vintage walnut sideboard designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Vintage%20Walnut%20Sideboard"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9be",
+                "username": "customer_576",
+                "comment": "Packaging was very secure, no scratches or damage.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9bf",
+                "username": "customer_724",
+                "comment": "Packaging was very secure, no scratches or damage.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9c0",
+                "username": "customer_188",
+                "comment": "Packaging was very secure, no scratches or damage.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Minimalist Teak Wardrobe",
+        "category": "Wardrobes",
+        "subcategory": "Mirrored",
+        "price": 572.29,
+        "oldPrice": 686.75,
+        "inStock": 31,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted minimalist teak wardrobe designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Minimalist%20Teak%20Wardrobe"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Minimalist Velvet Ottoman",
+        "category": "Ottomans",
+        "subcategory": "Pouffe",
+        "price": 586.46,
+        "oldPrice": 703.75,
+        "inStock": 13,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted minimalist velvet ottoman designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Minimalist%20Velvet%20Ottoman"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Contemporary Plush velvet Sideboard",
+        "category": "Sideboards",
+        "subcategory": "3-Door Sideboard",
+        "price": 227.86,
+        "oldPrice": 273.43,
+        "inStock": 18,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted contemporary plush velvet sideboard designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Sideboards19/800/600"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Industrial Pine Desk",
+        "category": "Desks",
+        "subcategory": "Standing Desk",
+        "price": 835.53,
+        "oldPrice": 1002.64,
+        "inStock": 40,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted industrial pine desk designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Desks20/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9c1",
+                "username": "customer_504",
+                "comment": "Great value for money compared to high-street brands.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9c2",
+                "username": "customer_186",
+                "comment": "Very modern and sleek design. Five stars.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9c3",
+                "username": "customer_279",
+                "comment": "Super comfortable for long movie nights.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Vintage Pine Chair",
+        "category": "Chairs",
+        "subcategory": "Lounge Chair",
+        "price": 482.57,
+        "oldPrice": 579.08,
+        "inStock": 35,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted vintage pine chair designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/chair,armchair,seating?lock=21"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9c4",
+                "username": "customer_746",
+                "comment": "Great value for money compared to high-street brands.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9c5",
+                "username": "customer_301",
+                "comment": "Fits the aesthetic of my apartment perfectly.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Classic Linen TV Unit",
+        "category": "TV Units",
+        "subcategory": "Corner TV Unit",
+        "price": 108.33,
+        "oldPrice": 130.0,
+        "inStock": 30,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted classic linen tv unit designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/tv-stand,entertainment-center?lock=22"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9c6",
+                "username": "customer_895",
+                "comment": "Super comfortable for long movie nights.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9c7",
+                "username": "customer_229",
+                "comment": "Packaging was very secure, no scratches or damage.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Modern Linen Sideboard",
+        "category": "Sideboards",
+        "subcategory": "3-Door Sideboard",
+        "price": 477.17,
+        "oldPrice": 572.6,
+        "inStock": 47,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted modern linen sideboard designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/sideboard,credenza?lock=23"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Minimalist Marble Table",
+        "category": "Tables",
+        "subcategory": "Console Table",
+        "price": 540.28,
+        "oldPrice": 648.34,
+        "inStock": 17,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted minimalist marble table designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Tables24/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9c8",
+                "username": "customer_910",
+                "comment": "My cat loves it more than I do!",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9c9",
+                "username": "customer_930",
+                "comment": "Very modern and sleek design. Five stars.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9ca",
+                "username": "customer_565",
+                "comment": "Perfect for my home office setup.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Scandinavian Metal Desk",
+        "category": "Desks",
+        "subcategory": "Corner Desk",
+        "price": 129.18,
+        "oldPrice": 155.02,
+        "inStock": 26,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted scandinavian metal desk designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/office-desk,workspace?lock=25"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Luxury Marble Armchair",
+        "category": "Armchairs",
+        "subcategory": "Recliner",
+        "price": 478.36,
+        "oldPrice": 574.03,
+        "inStock": 13,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted luxury marble armchair designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Armchairs26/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9cb",
+                "username": "customer_853",
+                "comment": "The fabric feels very premium and durable.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9cc",
+                "username": "customer_230",
+                "comment": "Very modern and sleek design. Five stars.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9cd",
+                "username": "customer_736",
+                "comment": "Wait time for delivery was long, but worth it.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Modern Walnut Sofa",
+        "category": "Sofas",
+        "subcategory": "Corner Sofa",
+        "price": 93.04,
+        "oldPrice": 111.65,
+        "inStock": 6,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted modern walnut sofa designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/couch,sofa,living-room?lock=27"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9ce",
+                "username": "customer_252",
+                "comment": "Exactly as pictured on the website.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Rustic Leather Sofa",
+        "category": "Sofas",
+        "subcategory": "2-Seater Sofa",
+        "price": 550.7,
+        "oldPrice": 660.84,
+        "inStock": 9,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted rustic leather sofa designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Sofas28/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9cf",
+                "username": "customer_977",
+                "comment": "Fits the aesthetic of my apartment perfectly.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9d0",
+                "username": "customer_764",
+                "comment": "The color is slightly darker than the photos, but still nice.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Rustic Metal Armchair",
+        "category": "Armchairs",
+        "subcategory": "Tub Chair",
+        "price": 867.35,
+        "oldPrice": 1040.82,
+        "inStock": 12,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted rustic metal armchair designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Armchairs29/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9d1",
+                "username": "customer_421",
+                "comment": "Packaging was very secure, no scratches or damage.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9d2",
+                "username": "customer_673",
+                "comment": "Very modern and sleek design. Five stars.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Scandinavian Plush velvet Bed",
+        "category": "Beds",
+        "subcategory": "Bunk Bed",
+        "price": 473.62,
+        "oldPrice": 568.34,
+        "inStock": 2,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted scandinavian plush velvet bed designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Beds30/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9d3",
+                "username": "customer_920",
+                "comment": "The fabric feels very premium and durable.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9d4",
+                "username": "customer_946",
+                "comment": "Great value for money compared to high-street brands.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9d5",
+                "username": "customer_534",
+                "comment": "The fabric feels very premium and durable.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Vintage Metal Wardrobe",
+        "category": "Wardrobes",
+        "subcategory": "Mirrored",
+        "price": 398.23,
+        "oldPrice": 477.88,
+        "inStock": 29,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted vintage metal wardrobe designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Vintage%20Metal%20Wardrobe"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9d6",
+                "username": "customer_251",
+                "comment": "Great value for money compared to high-street brands.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Luxury Leather Sofa",
+        "category": "Sofas",
+        "subcategory": "Sofa Bed",
+        "price": 759.67,
+        "oldPrice": 911.6,
+        "inStock": 35,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted luxury leather sofa designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Sofas32/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9d7",
+                "username": "customer_707",
+                "comment": "Delivery was fast and assembly was easy.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Classic Oak Bed",
+        "category": "Beds",
+        "subcategory": "Super King",
+        "price": 754.64,
+        "oldPrice": 905.57,
+        "inStock": 40,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted classic oak bed designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Beds33/800/600"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Contemporary Glass Bed",
+        "category": "Beds",
+        "subcategory": "Single Bed",
+        "price": 961.36,
+        "oldPrice": 1153.63,
+        "inStock": 31,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted contemporary glass bed designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Beds34/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9d8",
+                "username": "customer_605",
+                "comment": "Fits the aesthetic of my apartment perfectly.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9d9",
+                "username": "customer_393",
+                "comment": "The cushions are quite firm but very supportive.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9da",
+                "username": "customer_851",
+                "comment": "Packaging was very secure, no scratches or damage.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Minimalist Pine Chair",
+        "category": "Chairs",
+        "subcategory": "Lounge Chair",
+        "price": 845.56,
+        "oldPrice": 1014.67,
+        "inStock": 30,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted minimalist pine chair designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/chair,armchair,seating?lock=35"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9db",
+                "username": "customer_285",
+                "comment": "Packaging was very secure, no scratches or damage.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Minimalist Plush velvet Wardrobe",
+        "category": "Wardrobes",
+        "subcategory": "3-Door Wardrobe",
+        "price": 455.81,
+        "oldPrice": 546.97,
+        "inStock": 49,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted minimalist plush velvet wardrobe designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Minimalist%20Plush%20velvet%20Wardrobe"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9dc",
+                "username": "customer_832",
+                "comment": "A bit smaller than I expected, but fits the space.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9dd",
+                "username": "customer_529",
+                "comment": "Delivery was fast and assembly was easy.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Minimalist Metal Sideboard",
+        "category": "Sideboards",
+        "subcategory": "Display Cabinet",
+        "price": 147.66,
+        "oldPrice": 177.19,
+        "inStock": 12,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted minimalist metal sideboard designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/sideboard,credenza?lock=37"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9de",
+                "username": "customer_224",
+                "comment": "Great quality, highly recommend!",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9df",
+                "username": "customer_973",
+                "comment": "The color is slightly darker than the photos, but still nice.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Vintage Plush velvet Sofa",
+        "category": "Sofas",
+        "subcategory": "3-Seater Sofa",
+        "price": 110.93,
+        "oldPrice": 133.12,
+        "inStock": 5,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted vintage plush velvet sofa designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/couch,sofa,living-room?lock=38"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Classic Oak Sideboard",
+        "category": "Sideboards",
+        "subcategory": "2-Door Sideboard",
+        "price": 632.85,
+        "oldPrice": 759.42,
+        "inStock": 25,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted classic oak sideboard designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/sideboard,credenza?lock=39"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9e0",
+                "username": "customer_236",
+                "comment": "Took two people to assemble, but the instructions were clear.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9e1",
+                "username": "customer_338",
+                "comment": "A bit overpriced, but solid.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9e2",
+                "username": "customer_348",
+                "comment": "The fabric feels very premium and durable.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Luxury Linen Sideboard",
+        "category": "Sideboards",
+        "subcategory": "3-Door Sideboard",
+        "price": 978.89,
+        "oldPrice": 1174.67,
+        "inStock": 27,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted luxury linen sideboard designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/sideboard,credenza?lock=40"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Industrial Teak Wardrobe",
+        "category": "Wardrobes",
+        "subcategory": "Mirrored",
+        "price": 118.06,
+        "oldPrice": 141.67,
+        "inStock": 31,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted industrial teak wardrobe designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Wardrobes41/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9e3",
+                "username": "customer_547",
+                "comment": "Great quality, highly recommend!",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Scandinavian Metal Table",
+        "category": "Tables",
+        "subcategory": "Console Table",
+        "price": 847.06,
+        "oldPrice": 1016.47,
+        "inStock": 9,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted scandinavian metal table designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Scandinavian%20Metal%20Table"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Scandinavian Pine Sofa",
+        "category": "Sofas",
+        "subcategory": "2-Seater Sofa",
+        "price": 747.63,
+        "oldPrice": 897.16,
+        "inStock": 19,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted scandinavian pine sofa designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Scandinavian%20Pine%20Sofa"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9e4",
+                "username": "customer_159",
+                "comment": "Great value for money compared to high-street brands.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9e5",
+                "username": "customer_579",
+                "comment": "My cat loves it more than I do!",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Contemporary Glass Ottoman",
+        "category": "Ottomans",
+        "subcategory": "Footstool",
+        "price": 55.22,
+        "oldPrice": 66.26,
+        "inStock": 12,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted contemporary glass ottoman designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Contemporary%20Glass%20Ottoman"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9e6",
+                "username": "customer_711",
+                "comment": "The color is slightly darker than the photos, but still nice.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Luxury Plush velvet Chair",
+        "category": "Chairs",
+        "subcategory": "Office Chair",
+        "price": 559.62,
+        "oldPrice": 671.54,
+        "inStock": 8,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted luxury plush velvet chair designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Luxury%20Plush%20velvet%20Chair"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Contemporary Leather Bed",
+        "category": "Beds",
+        "subcategory": "Bunk Bed",
+        "price": 256.32,
+        "oldPrice": 307.58,
+        "inStock": 27,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted contemporary leather bed designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Contemporary%20Leather%20Bed"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9e7",
+                "username": "customer_267",
+                "comment": "Very modern and sleek design. Five stars.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9e8",
+                "username": "customer_273",
+                "comment": "The wood finish is absolutely stunning.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Mid-Century Walnut Armchair",
+        "category": "Armchairs",
+        "subcategory": "Accent Chair",
+        "price": 253.37,
+        "oldPrice": 304.04,
+        "inStock": 32,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted mid-century walnut armchair designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Mid-Century%20Walnut%20Armchair"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9e9",
+                "username": "customer_921",
+                "comment": "The wood finish is absolutely stunning.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9ea",
+                "username": "customer_381",
+                "comment": "Looks beautiful in my living room.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Mid-Century Velvet Armchair",
+        "category": "Armchairs",
+        "subcategory": "Tub Chair",
+        "price": 154.3,
+        "oldPrice": 185.16,
+        "inStock": 45,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted mid-century velvet armchair designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Armchairs48/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9eb",
+                "username": "customer_703",
+                "comment": "Excellent craftsmanship, you can tell it\u2019s built to last.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Vintage Walnut Armchair",
+        "category": "Armchairs",
+        "subcategory": "Recliner",
+        "price": 206.36,
+        "oldPrice": 247.63,
+        "inStock": 2,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted vintage walnut armchair designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Armchairs49/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9ec",
+                "username": "customer_325",
+                "comment": "The fabric feels very premium and durable.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Luxury Leather Wardrobe",
+        "category": "Wardrobes",
+        "subcategory": "3-Door Wardrobe",
+        "price": 664.15,
+        "oldPrice": 796.98,
+        "inStock": 29,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted luxury leather wardrobe designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/closet,wardrobe,cabinet?lock=50"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Mid-Century Plush velvet Sideboard",
+        "category": "Sideboards",
+        "subcategory": "2-Door Sideboard",
+        "price": 840.72,
+        "oldPrice": 1008.86,
+        "inStock": 44,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted mid-century plush velvet sideboard designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Sideboards51/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9ed",
+                "username": "customer_727",
+                "comment": "The cushions are quite firm but very supportive.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9ee",
+                "username": "customer_343",
+                "comment": "Great value for money compared to high-street brands.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Rustic Pine Wardrobe",
+        "category": "Wardrobes",
+        "subcategory": "2-Door Wardrobe",
+        "price": 164.83,
+        "oldPrice": 197.8,
+        "inStock": 46,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted rustic pine wardrobe designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Rustic%20Pine%20Wardrobe"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9ef",
+                "username": "customer_288",
+                "comment": "Exactly as pictured on the website.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Minimalist Oak Table",
+        "category": "Tables",
+        "subcategory": "Coffee Table",
+        "price": 544.49,
+        "oldPrice": 653.39,
+        "inStock": 1,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted minimalist oak table designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Tables53/800/600"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Industrial Velvet Table",
+        "category": "Tables",
+        "subcategory": "Side Table",
+        "price": 403.52,
+        "oldPrice": 484.22,
+        "inStock": 34,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted industrial velvet table designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/dining-table,desk,coffee-table?lock=54"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9f0",
+                "username": "customer_270",
+                "comment": "Exactly as pictured on the website.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9f1",
+                "username": "customer_499",
+                "comment": "Great value for money compared to high-street brands.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9f2",
+                "username": "customer_589",
+                "comment": "Very modern and sleek design. Five stars.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Luxury Leather Wardrobe",
+        "category": "Wardrobes",
+        "subcategory": "2-Door Wardrobe",
+        "price": 666.2,
+        "oldPrice": 799.44,
+        "inStock": 22,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted luxury leather wardrobe designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Luxury%20Leather%20Wardrobe"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9f3",
+                "username": "customer_296",
+                "comment": "Very modern and sleek design. Five stars.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9f4",
+                "username": "customer_863",
+                "comment": "Excellent craftsmanship, you can tell it\u2019s built to last.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Minimalist Walnut Ottoman",
+        "category": "Ottomans",
+        "subcategory": "Storage Ottoman",
+        "price": 197.05,
+        "oldPrice": 236.46,
+        "inStock": 10,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted minimalist walnut ottoman designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Minimalist%20Walnut%20Ottoman"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Rustic Walnut Sideboard",
+        "category": "Sideboards",
+        "subcategory": "2-Door Sideboard",
+        "price": 470.56,
+        "oldPrice": 564.67,
+        "inStock": 22,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted rustic walnut sideboard designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/sideboard,credenza?lock=57"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9f5",
+                "username": "customer_474",
+                "comment": "My cat loves it more than I do!",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9f6",
+                "username": "customer_406",
+                "comment": "The wood finish is absolutely stunning.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9f7",
+                "username": "customer_319",
+                "comment": "The cushions are quite firm but very supportive.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Vintage Walnut Table",
+        "category": "Tables",
+        "subcategory": "Dining Table",
+        "price": 216.9,
+        "oldPrice": 260.28,
+        "inStock": 37,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted vintage walnut table designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Vintage%20Walnut%20Table"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Modern Linen Bed",
+        "category": "Beds",
+        "subcategory": "Super King",
+        "price": 64.39,
+        "oldPrice": 77.27,
+        "inStock": 34,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted modern linen bed designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/bedroom,bed,mattress?lock=59"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9f8",
+                "username": "customer_991",
+                "comment": "The cushions are quite firm but very supportive.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Industrial Metal Chair",
+        "category": "Chairs",
+        "subcategory": "Dining Chair",
+        "price": 268.61,
+        "oldPrice": 322.33,
+        "inStock": 15,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted industrial metal chair designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Industrial%20Metal%20Chair"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9f9",
+                "username": "customer_949",
+                "comment": "Great value for money compared to high-street brands.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9fa",
+                "username": "customer_500",
+                "comment": "The color is slightly darker than the photos, but still nice.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Luxury Glass Table",
+        "category": "Tables",
+        "subcategory": "Console Table",
+        "price": 479.48,
+        "oldPrice": 575.38,
+        "inStock": 1,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted luxury glass table designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Luxury%20Glass%20Table"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9fb",
+                "username": "customer_325",
+                "comment": "The cushions are quite firm but very supportive.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9fc",
+                "username": "customer_464",
+                "comment": "A bit smaller than I expected, but fits the space.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Contemporary Oak TV Unit",
+        "category": "TV Units",
+        "subcategory": "Entertainment Center",
+        "price": 400.27,
+        "oldPrice": 480.32,
+        "inStock": 49,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted contemporary oak tv unit designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/TV Units62/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923a9fd",
+                "username": "customer_896",
+                "comment": "A bit overpriced, but solid.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9fe",
+                "username": "customer_936",
+                "comment": "Wait time for delivery was long, but worth it.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923a9ff",
+                "username": "customer_823",
+                "comment": "A bit smaller than I expected, but fits the space.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Classic Walnut Wardrobe",
+        "category": "Wardrobes",
+        "subcategory": "3-Door Wardrobe",
+        "price": 553.65,
+        "oldPrice": 664.38,
+        "inStock": 26,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted classic walnut wardrobe designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Wardrobes63/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa00",
+                "username": "customer_640",
+                "comment": "Took two people to assemble, but the instructions were clear.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa01",
+                "username": "customer_832",
+                "comment": "Wait time for delivery was long, but worth it.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Rustic Metal Table",
+        "category": "Tables",
+        "subcategory": "Dining Table",
+        "price": 546.79,
+        "oldPrice": 656.15,
+        "inStock": 8,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted rustic metal table designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Rustic%20Metal%20Table"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa02",
+                "username": "customer_234",
+                "comment": "A bit smaller than I expected, but fits the space.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa03",
+                "username": "customer_631",
+                "comment": "Wait time for delivery was long, but worth it.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Rustic Velvet Armchair",
+        "category": "Armchairs",
+        "subcategory": "Recliner",
+        "price": 618.09,
+        "oldPrice": 741.71,
+        "inStock": 22,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted rustic velvet armchair designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Armchairs65/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa04",
+                "username": "customer_237",
+                "comment": "Packaging was very secure, no scratches or damage.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa05",
+                "username": "customer_180",
+                "comment": "Packaging was very secure, no scratches or damage.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa06",
+                "username": "customer_691",
+                "comment": "Exactly as pictured on the website.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Luxury Linen Wardrobe",
+        "category": "Wardrobes",
+        "subcategory": "2-Door Wardrobe",
+        "price": 973.58,
+        "oldPrice": 1168.3,
+        "inStock": 4,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted luxury linen wardrobe designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/closet,wardrobe,cabinet?lock=66"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Modern Linen Sofa",
+        "category": "Sofas",
+        "subcategory": "Corner Sofa",
+        "price": 63.06,
+        "oldPrice": 75.67,
+        "inStock": 37,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted modern linen sofa designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Modern%20Linen%20Sofa"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa07",
+                "username": "customer_450",
+                "comment": "A bit smaller than I expected, but fits the space.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa08",
+                "username": "customer_564",
+                "comment": "Great value for money compared to high-street brands.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Luxury Leather Chair",
+        "category": "Chairs",
+        "subcategory": "Office Chair",
+        "price": 396.31,
+        "oldPrice": 475.57,
+        "inStock": 43,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted luxury leather chair designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Chairs68/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa09",
+                "username": "customer_239",
+                "comment": "Looks beautiful in my living room.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Contemporary Teak Sofa",
+        "category": "Sofas",
+        "subcategory": "2-Seater Sofa",
+        "price": 762.11,
+        "oldPrice": 914.53,
+        "inStock": 14,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted contemporary teak sofa designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Sofas69/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa0a",
+                "username": "customer_952",
+                "comment": "Excellent craftsmanship, you can tell it\u2019s built to last.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa0b",
+                "username": "customer_755",
+                "comment": "A bit smaller than I expected, but fits the space.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa0c",
+                "username": "customer_614",
+                "comment": "The wood finish is absolutely stunning.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Industrial Pine Armchair",
+        "category": "Armchairs",
+        "subcategory": "Accent Chair",
+        "price": 406.56,
+        "oldPrice": 487.87,
+        "inStock": 18,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted industrial pine armchair designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Armchairs70/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa0d",
+                "username": "customer_401",
+                "comment": "The cushions are quite firm but very supportive.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Contemporary Walnut Chair",
+        "category": "Chairs",
+        "subcategory": "Dining Chair",
+        "price": 461.47,
+        "oldPrice": 553.76,
+        "inStock": 36,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted contemporary walnut chair designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Chairs71/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa0e",
+                "username": "customer_273",
+                "comment": "Very modern and sleek design. Five stars.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa0f",
+                "username": "customer_907",
+                "comment": "A bit smaller than I expected, but fits the space.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa10",
+                "username": "customer_571",
+                "comment": "Delivery was fast and assembly was easy.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Vintage Oak TV Unit",
+        "category": "TV Units",
+        "subcategory": "Corner TV Unit",
+        "price": 140.95,
+        "oldPrice": 169.14,
+        "inStock": 4,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted vintage oak tv unit designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/tv-stand,entertainment-center?lock=72"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa11",
+                "username": "customer_470",
+                "comment": "The cushions are quite firm but very supportive.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa12",
+                "username": "customer_912",
+                "comment": "Excellent craftsmanship, you can tell it\u2019s built to last.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa13",
+                "username": "customer_582",
+                "comment": "Packaging was very secure, no scratches or damage.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Modern Walnut Table",
+        "category": "Tables",
+        "subcategory": "Dining Table",
+        "price": 730.6,
+        "oldPrice": 876.72,
+        "inStock": 45,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted modern walnut table designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Modern%20Walnut%20Table"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa14",
+                "username": "customer_888",
+                "comment": "Looks beautiful in my living room.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Contemporary Oak Sideboard",
+        "category": "Sideboards",
+        "subcategory": "2-Door Sideboard",
+        "price": 230.81,
+        "oldPrice": 276.97,
+        "inStock": 30,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted contemporary oak sideboard designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Contemporary%20Oak%20Sideboard"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa15",
+                "username": "customer_193",
+                "comment": "Wait time for delivery was long, but worth it.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa16",
+                "username": "customer_674",
+                "comment": "The fabric feels very premium and durable.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa17",
+                "username": "customer_505",
+                "comment": "Great value for money compared to high-street brands.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Rustic Oak Ottoman",
+        "category": "Ottomans",
+        "subcategory": "Pouffe",
+        "price": 467.99,
+        "oldPrice": 561.59,
+        "inStock": 17,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted rustic oak ottoman designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Rustic%20Oak%20Ottoman"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa18",
+                "username": "customer_860",
+                "comment": "The wood finish is absolutely stunning.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa19",
+                "username": "customer_801",
+                "comment": "Delivery was fast and assembly was easy.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Minimalist Teak Wardrobe",
+        "category": "Wardrobes",
+        "subcategory": "Sliding Door",
+        "price": 564.79,
+        "oldPrice": 677.75,
+        "inStock": 24,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted minimalist teak wardrobe designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Wardrobes76/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa1a",
+                "username": "customer_603",
+                "comment": "The fabric feels very premium and durable.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa1b",
+                "username": "customer_336",
+                "comment": "A bit smaller than I expected, but fits the space.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa1c",
+                "username": "customer_346",
+                "comment": "The wood finish is absolutely stunning.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Vintage Metal Armchair",
+        "category": "Armchairs",
+        "subcategory": "Tub Chair",
+        "price": 926.66,
+        "oldPrice": 1111.99,
+        "inStock": 17,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted vintage metal armchair designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Armchairs77/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa1d",
+                "username": "customer_155",
+                "comment": "Very modern and sleek design. Five stars.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Rustic Plush velvet Ottoman",
+        "category": "Ottomans",
+        "subcategory": "Pouffe",
+        "price": 965.75,
+        "oldPrice": 1158.9,
+        "inStock": 12,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted rustic plush velvet ottoman designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Rustic%20Plush%20velvet%20Ottoman"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa1e",
+                "username": "customer_912",
+                "comment": "The wood finish is absolutely stunning.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa1f",
+                "username": "customer_123",
+                "comment": "Perfect for my home office setup.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa20",
+                "username": "customer_721",
+                "comment": "The cushions are quite firm but very supportive.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Classic Linen Desk",
+        "category": "Desks",
+        "subcategory": "Standing Desk",
+        "price": 187.77,
+        "oldPrice": 225.32,
+        "inStock": 37,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted classic linen desk designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Classic%20Linen%20Desk"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Contemporary Leather Bed",
+        "category": "Beds",
+        "subcategory": "Bunk Bed",
+        "price": 517.38,
+        "oldPrice": 620.86,
+        "inStock": 47,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted contemporary leather bed designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Beds80/800/600"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Vintage Metal Sideboard",
+        "category": "Sideboards",
+        "subcategory": "Display Cabinet",
+        "price": 342.54,
+        "oldPrice": 411.05,
+        "inStock": 40,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted vintage metal sideboard designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Sideboards81/800/600"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Vintage Velvet Ottoman",
+        "category": "Ottomans",
+        "subcategory": "Footstool",
+        "price": 894.69,
+        "oldPrice": 1073.63,
+        "inStock": 22,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted vintage velvet ottoman designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/ottoman,footstool?lock=82"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Scandinavian Linen Table",
+        "category": "Tables",
+        "subcategory": "Coffee Table",
+        "price": 347.79,
+        "oldPrice": 417.35,
+        "inStock": 25,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted scandinavian linen table designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/dining-table,desk,coffee-table?lock=83"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Minimalist Teak Sofa",
+        "category": "Sofas",
+        "subcategory": "Sofa Bed",
+        "price": 795.09,
+        "oldPrice": 954.11,
+        "inStock": 27,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted minimalist teak sofa designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/couch,sofa,living-room?lock=84"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa21",
+                "username": "customer_121",
+                "comment": "Perfect for my home office setup.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa22",
+                "username": "customer_877",
+                "comment": "Wait time for delivery was long, but worth it.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Rustic Marble TV Unit",
+        "category": "TV Units",
+        "subcategory": "Corner TV Unit",
+        "price": 937.66,
+        "oldPrice": 1125.19,
+        "inStock": 3,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted rustic marble tv unit designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/TV Units85/800/600"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Classic Pine Wardrobe",
+        "category": "Wardrobes",
+        "subcategory": "Mirrored",
+        "price": 849.27,
+        "oldPrice": 1019.12,
+        "inStock": 38,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted classic pine wardrobe designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/closet,wardrobe,cabinet?lock=86"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa23",
+                "username": "customer_908",
+                "comment": "Fits the aesthetic of my apartment perfectly.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa24",
+                "username": "customer_306",
+                "comment": "Great quality, highly recommend!",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Scandinavian Oak Sideboard",
+        "category": "Sideboards",
+        "subcategory": "3-Door Sideboard",
+        "price": 457.14,
+        "oldPrice": 548.57,
+        "inStock": 15,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted scandinavian oak sideboard designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Sideboards87/800/600"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Rustic Walnut Ottoman",
+        "category": "Ottomans",
+        "subcategory": "Storage Ottoman",
+        "price": 356.2,
+        "oldPrice": 427.44,
+        "inStock": 22,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted rustic walnut ottoman designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/ottoman,footstool?lock=88"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Industrial Marble Table",
+        "category": "Tables",
+        "subcategory": "Side Table",
+        "price": 894.96,
+        "oldPrice": 1073.95,
+        "inStock": 46,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted industrial marble table designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Tables89/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa25",
+                "username": "customer_944",
+                "comment": "Great value for money compared to high-street brands.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Rustic Glass Wardrobe",
+        "category": "Wardrobes",
+        "subcategory": "3-Door Wardrobe",
+        "price": 284.69,
+        "oldPrice": 341.63,
+        "inStock": 25,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted rustic glass wardrobe designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Wardrobes90/800/600"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Industrial Teak Desk",
+        "category": "Desks",
+        "subcategory": "Corner Desk",
+        "price": 106.85,
+        "oldPrice": 128.22,
+        "inStock": 7,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted industrial teak desk designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Industrial%20Teak%20Desk"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa26",
+                "username": "customer_979",
+                "comment": "Exactly as pictured on the website.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa27",
+                "username": "customer_376",
+                "comment": "Wait time for delivery was long, but worth it.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa28",
+                "username": "customer_663",
+                "comment": "My cat loves it more than I do!",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Classic Oak Sideboard",
+        "category": "Sideboards",
+        "subcategory": "Display Cabinet",
+        "price": 171.92,
+        "oldPrice": 206.3,
+        "inStock": 38,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted classic oak sideboard designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Sideboards92/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa29",
+                "username": "customer_736",
+                "comment": "Excellent craftsmanship, you can tell it\u2019s built to last.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa2a",
+                "username": "customer_795",
+                "comment": "A bit smaller than I expected, but fits the space.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa2b",
+                "username": "customer_660",
+                "comment": "A bit smaller than I expected, but fits the space.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Modern Walnut Wardrobe",
+        "category": "Wardrobes",
+        "subcategory": "Sliding Door",
+        "price": 675.48,
+        "oldPrice": 810.58,
+        "inStock": 13,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted modern walnut wardrobe designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://loremflickr.com/800/600/closet,wardrobe,cabinet?lock=93"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa2c",
+                "username": "customer_224",
+                "comment": "Exactly as pictured on the website.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa2d",
+                "username": "customer_781",
+                "comment": "Packaging was very secure, no scratches or damage.",
+                "stars": 5
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa2e",
+                "username": "customer_733",
+                "comment": "Packaging was very secure, no scratches or damage.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Industrial Pine TV Unit",
+        "category": "TV Units",
+        "subcategory": "Entertainment Center",
+        "price": 472.94,
+        "oldPrice": 567.53,
+        "inStock": 19,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted industrial pine tv unit designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/TV Units94/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa2f",
+                "username": "customer_495",
+                "comment": "Perfect for my home office setup.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa30",
+                "username": "customer_513",
+                "comment": "Wait time for delivery was long, but worth it.",
+                "stars": 4
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa31",
+                "username": "customer_255",
+                "comment": "Super comfortable for long movie nights.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Scandinavian Metal Desk",
+        "category": "Desks",
+        "subcategory": "Corner Desk",
+        "price": 309.53,
+        "oldPrice": 371.44,
+        "inStock": 27,
+        "topSelling": true,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted scandinavian metal desk designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Desks95/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa32",
+                "username": "customer_612",
+                "comment": "The color is slightly darker than the photos, but still nice.",
+                "stars": 3
+            },
+            {
+                "_id": "69b2b4dc82282b659923aa33",
+                "username": "customer_524",
+                "comment": "The color is slightly darker than the photos, but still nice.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Modern Leather TV Unit",
+        "category": "TV Units",
+        "subcategory": "Entertainment Center",
+        "price": 135.73,
+        "oldPrice": 162.88,
+        "inStock": 37,
+        "topSelling": false,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted modern leather tv unit designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/TV Units96/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa34",
+                "username": "customer_296",
+                "comment": "Delivery was fast and assembly was easy.",
+                "stars": 5
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Minimalist Teak Sofa",
+        "category": "Sofas",
+        "subcategory": "Loveseat",
+        "price": 332.81,
+        "oldPrice": 399.37,
+        "inStock": 15,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted minimalist teak sofa designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Sofas97/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa35",
+                "username": "customer_393",
+                "comment": "Excellent craftsmanship, you can tell it\u2019s built to last.",
+                "stars": 3
+            }
+        ],
+        "variations": []
+    },
+    {
+        "title": "Minimalist Velvet Desk",
+        "category": "Desks",
+        "subcategory": "Writing Desk",
+        "price": 165.35,
+        "oldPrice": 198.42,
+        "inStock": 34,
+        "topSelling": false,
+        "newArrival": true,
+        "description": "A high-quality, beautifully crafted minimalist velvet desk designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://placehold.co/800x600/e2e8f0/475569?text=Minimalist%20Velvet%20Desk"
+        ],
+        "reviews": [],
+        "variations": []
+    },
+    {
+        "title": "Luxury Velvet Sideboard",
+        "category": "Sideboards",
+        "subcategory": "Display Cabinet",
+        "price": 917.84,
+        "oldPrice": 1101.41,
+        "inStock": 43,
+        "topSelling": true,
+        "newArrival": false,
+        "description": "A high-quality, beautifully crafted luxury velvet sideboard designed to elevate your home decor.",
+        "specification": "Standard dimensions apply. See manual for assembly instructions.",
+        "images": [
+            "https://picsum.photos/seed/Sideboards99/800/600"
+        ],
+        "reviews": [
+            {
+                "_id": "69b2b4dc82282b659923aa36",
+                "username": "customer_362",
+                "comment": "The color is slightly darker than the photos, but still nice.",
+                "stars": 4
+            }
+        ],
+        "variations": []
+    }
+]
