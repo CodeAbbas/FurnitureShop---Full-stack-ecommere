@@ -7,9 +7,9 @@ def push_initial_data():
     client = MongoClient("mongodb://127.0.0.1:27017")
     db = client.selectionDB
     
-    # ---------------------------------------------------------
+    # =====================================================
     # 1. PUSH USERS (Create Admin & Test Customer)
-    # ---------------------------------------------------------
+    # =====================================================
     users_collection = db.users
     users_collection.delete_many({})
     
@@ -37,9 +37,9 @@ def push_initial_data():
     print("--> Admin Login: admin@selection.com / admin123")
     print("--> Customer Login: customer@selection.com / customer123")
 
-    # ---------------------------------------------------------
+    # =====================================================
     # 2. PUSH PRODUCTS (From data.json)
-    # ---------------------------------------------------------
+    # =====================================================
     products_collection = db.products
     products_collection.delete_many({}) # Clear existing products
     

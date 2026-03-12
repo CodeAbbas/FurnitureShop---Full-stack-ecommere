@@ -1,0 +1,31 @@
+# Python Bytecode & Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Environments & Dependencies
+.env
+.venv
+env/
+venv/
+ENV/
+bin/
+lib/
+include/
+
+# IDE Specific (VS Code / PyCharm)
+.vscode/
+.idea/
+
+# Database / Data Files
+*.log
+mongo-data/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+*.pem
+*.key
