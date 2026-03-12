@@ -32,7 +32,7 @@ subcategories_map = {
 def generate_furniture_data():
     categories = list(category_keywords.keys())
     adjectives = ['Modern', 'Classic', 'Rustic', 'Minimalist', 'Luxury', 'Vintage', 'Contemporary', 'Industrial', 'Scandinavian', 'Mid-Century']
-    materials = ['Oak', 'Pine', 'Metal', 'Glass', 'Leather', 'Velvet', 'Walnut', 'Teak', 'Marble', 'Linen', 'Plush velvet']
+    materials = ['Oak', 'Pine', 'Metal', 'Glass', 'Leather', 'Velvet', 'Walnut', 'Teak', 'Marble', 'Linen', 'Plush Velvet']
     
     product_list = []
     
@@ -51,7 +51,7 @@ def generate_furniture_data():
 
         image_providers = [
             f"https://loremflickr.com/800/600/{keywords}?lock={i}",
-            f"https://picsum.photos/seed/{category}{i}/800/600",
+            f"https://picsum.photos/seed/{category.replace(' ', '')}{i}/800/600",
             f"https://placehold.co/800x600/e2e8f0/475569?text={encoded_title}"
         ]
         

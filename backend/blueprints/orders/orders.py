@@ -127,32 +127,29 @@ def update_order_status(o_id):
 @admin_required
 def get_dashboard_metrics():
     try:
-        # Aggregation pipeline to calculate total orders and revenue
         pipeline = [
             {
                 "$group": {
-                    "_id": None, 
-                    "totalRevenue": round(order_metrics[0]["totalRevenue"], 2), 
+                    "_id": None,
+                    "totalRevenue": {"$sum": "$totalAmount"},
                     "totalOrders": {"$sum": 1}
                 }
             }
         ]
-        
-        # Execute aggregation on orders collection
+
         order_metrics = list(orders_collection.aggregate(pipeline))
 
         total_products = globals.db.products.count_documents({})
-
-        total_users = users_collection.count_documents({})
+        total_users = globals.db.users.count_documents({})
 
         dashboard_data = {
-            "totalRevenue": order_metrics[0]["totalRevenue"] if order_metrics else 0,
+            "totalRevenue": round(order_metrics[0]["totalRevenue"], 2) if order_metrics else 0,
             "totalOrders": order_metrics[0]["totalOrders"] if order_metrics else 0,
             "totalProducts": total_products,
             "totalUsers": total_users
         }
 
         return make_response(jsonify(dashboard_data), 200)
-        
+
     except Exception as e:
         return make_response(jsonify({"error": "Internal Server Error", "details": str(e)}), 500)

@@ -19,11 +19,9 @@ def add_new_review(p_id):
 
     data = request.json
 
-    # Validating required fields
     if not data or not data.get("username") or not data.get("comment") or not data.get("stars"):
         return make_response(jsonify({"error": "Missing required fields (username, comment, stars)"}), 400)
 
-    # Validating stars
     try:
         stars = int(data["stars"])
         if stars < 1 or stars > 5:
@@ -31,12 +29,11 @@ def add_new_review(p_id):
     except ValueError:
         return make_response(jsonify({"error": "Stars must be a numeric value"}), 400)
     
-    # Find the product by ID
+
     product = products_collection.find_one({"_id": ObjectId(p_id)})
     if not product:
         return make_response(jsonify({"error": "Product not found"}), 404)
-    
-    # Create new review object
+
     new_review_id = ObjectId()
     new_review = {
         "_id": new_review_id,
@@ -45,7 +42,7 @@ def add_new_review(p_id):
         "stars": stars
     }
 
-    # Push review to the MongoDB product document
+
     products_collection.update_one(
         {"_id": ObjectId(p_id)},
         {"$push": {"reviews": new_review}}
@@ -64,11 +61,10 @@ def fetch_all_reviews(p_id):
         return make_response(jsonify({"error": "Invalid product ID format"}), 400)
 
     data_to_return = []
-    # Project only the reviews array, exclude the main product _id
     product = products_collection.find_one({ "_id": ObjectId(p_id) }, { "reviews": 1, "_id": 0 })
     
     if not product or 'reviews' not in product:
-        return make_response(jsonify([]), 200) # Return empty array if no reviews exist
+        return make_response(jsonify([]), 200)
 
     for review in product['reviews']:
         review['_id'] = str(review['_id'])
@@ -84,7 +80,6 @@ def fetch_one_review(p_id, r_id):
     if not ObjectId.is_valid(p_id) or not ObjectId.is_valid(r_id):
         return make_response(jsonify({"error": "Invalid ID format"}), 400)
 
-    # Use the positional operator ($) to return only the matching review
     product = products_collection.find_one(
         { "reviews._id": ObjectId(r_id), "_id": ObjectId(p_id) },
         { "_id": 0, "reviews.$": 1 }
@@ -151,7 +146,6 @@ def delete_review(p_id, r_id):
     if not ObjectId.is_valid(p_id) or not ObjectId.is_valid(r_id):
         return make_response(jsonify({"error": "Invalid ID format"}), 400)
 
-    # Use $pull to remove the specific review from the array
     result = products_collection.update_one(
         { "_id": ObjectId(p_id) },
         { "$pull": { "reviews": { "_id": ObjectId(r_id) } } }
@@ -159,5 +153,23 @@ def delete_review(p_id, r_id):
 
     if result.modified_count == 0:
         return make_response(jsonify({"error": "Review or Product not found"}), 404)
+
+    return make_response(jsonify({"message": "Review deleted successfully"}), 200)
+# =====================================================
+# DELETE OWN REVIEW BY REVIEW ID
+# =====================================================
+@reviews_bp.route("/api/v1.0/user/reviews/<string:r_id>", methods=['DELETE'])
+@jwt_required
+def delete_own_review(r_id):
+    if not ObjectId.is_valid(r_id):
+        return make_response(jsonify({"error": "Invalid review ID format"}), 400)
+
+    result = products_collection.update_one(
+        {"reviews._id": ObjectId(r_id)},
+        {"$pull": {"reviews": {"_id": ObjectId(r_id)}}}
+    )
+
+    if result.modified_count == 0:
+        return make_response(jsonify({"error": "Review not found"}), 404)
 
     return make_response(jsonify({"message": "Review deleted successfully"}), 200)

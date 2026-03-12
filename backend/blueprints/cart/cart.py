@@ -87,10 +87,19 @@ def update_cart_item(item_id):
     if not ObjectId.is_valid(item_id):
         return make_response(jsonify({"error": "Invalid cart item ID format"}), 400)
 
-    if not data or not data.get("quantity"):
+    if not data or data.get("quantity") is None:
         return make_response(jsonify({"error": "quantity is required"}), 400)
 
-    new_quantity = int(data["quantity"])
+    try:
+        new_quantity = int(data["quantity"])
+    except (ValueError, TypeError):
+        return make_response(jsonify({"error": "quantity must be a whole number"}), 400)
+
+    if new_quantity < 1:
+        return make_response(jsonify({"error": "quantity must be at least 1"}), 400)
+
+    if new_quantity > 100:
+        return make_response(jsonify({"error": "quantity cannot exceed 100"}), 400)
 
     user = users_collection.find_one(
         {"_id": ObjectId(user_id), "cart._id": ObjectId(item_id)},
@@ -102,7 +111,7 @@ def update_cart_item(item_id):
 
     cart_item = user["cart"][0]
     product = products_collection.find_one({"_id": cart_item["product_id"]})
-    
+
     if not product:
         return make_response(jsonify({"error": "Original product no longer exists"}), 404)
 
