@@ -111,3 +111,34 @@ def delete_product(p_id):
         return make_response(jsonify({"message": "Product deleted successfully"}), 200)
     else:
         return make_response(jsonify({"error": "Product not found"}), 404)
+    
+# =====================================================
+# SEARCH PRODUCTS (Public)
+# =====================================================
+@products_bp.route('/api/v1.0/guest/search', methods=['GET'])
+def search_products():
+    query = request.args.get('q', '')
+    
+    if not query:
+        return make_response(jsonify({"error": "Search query parameter 'q' is required"}), 400)
+
+    search_filter = {
+        "$or": [
+            {"title": {"$regex": query, "$options": "i"}},
+            {"category": {"$regex": query, "$options": "i"}}
+        ]
+    }
+
+    data_to_return = []
+    try:
+        products_cursor = products_collection.find(search_filter).limit(20)
+        
+        for product in products_cursor:
+            product['_id'] = str(product['_id'])
+            for review in product.get('reviews', []):
+                review['_id'] = str(review['_id'])
+            data_to_return.append(product)
+            
+        return make_response(jsonify(data_to_return), 200)
+    except Exception as e:
+        return make_response(jsonify({"error": "Internal Server Error", "details": str(e)}), 500)
