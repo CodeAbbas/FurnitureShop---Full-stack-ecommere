@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <p>Catalog length {{products.length}}</p>
+            @for (catalog of products; track catalog.name) {
+            <h2>{{catalog.name}}</h2>
+            }
+        </div>
+    </div>
+</div>
+
+
+
