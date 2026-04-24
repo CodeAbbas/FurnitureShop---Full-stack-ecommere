@@ -10,10 +10,10 @@ import { SelectionService } from '../../services/selection-service';
   styleUrl: './catalog.css',
 })
 export class Catalog {
-  catalog: any[] = [];
+  products: any[] = [];
 
   constructor(private selectionService: SelectionService) {}
   ngOnInit() {
-    this.catalog = this.selectionService.getProducts();
+    this.products = this.selectionService.getProducts();
   }
 }
