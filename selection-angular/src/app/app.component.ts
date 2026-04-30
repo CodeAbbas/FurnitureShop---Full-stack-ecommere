@@ -6,7 +6,7 @@ import jsonData from './assets/products.json';
 @Component({
   selector: 'app-root',
   imports: [Catalog, RouterOutlet],
-  templateUrl: './app.html',
+  templateUrl: './app.component.html',
   styleUrls: ['./app.css']
 })
 export class App{
