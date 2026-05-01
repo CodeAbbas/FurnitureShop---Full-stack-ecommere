@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
-import {RouterOutlet} from '@angular/router';
-import {Catalog} from './pages/catalog/catalog';
-import jsonData from './assets/products.json';
+import { RouterOutlet } from '@angular/router';
+import { NavComponent } from './components/nav/nav.component';
 
 @Component({
   selector: 'app-root',
-  imports: [Catalog, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.css']
+  standalone: true,
+  imports: [RouterOutlet, NavComponent],
+  templateUrl: './app.component.html'
 })
-export class App{
-  protected readonly title = 'Selection Furniture';
-  
+export class AppComponent {
+  title = 'selection-angular';
 }

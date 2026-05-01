@@ -1,0 +1,145 @@
+<div class="container py-4">
+
+  <h1 class="fw-bold mb-4">Shopping Cart</h1>
+
+  <!-- Empty state -->
+  <div class="row" *ngIf="cartItems.length === 0">
+    <div class="col-12 text-center py-5">
+      <div class="card border-0 shadow-sm py-5">
+        <div class="card-body">
+          <h3 class="text-muted mb-3">Your cart is empty</h3>
+          <p class="text-muted mb-4">
+            Looks like you haven't added any furniture yet. Browse our catalogue to find something you'll love.
+          </p>
+          <a [routerLink]="'/catalog'" class="btn btn-primary btn-lg">
+            Browse Catalogue
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Populated cart -->
+  <div class="row g-4" *ngIf="cartItems.length > 0">
+
+    <!-- LEFT: line items -->
+    <div class="col-12 col-lg-8">
+
+      <div class="card border-0 shadow-sm mb-3"
+           *ngFor="let item of cartItems">
+        <div class="card-body">
+          <div class="row g-3 align-items-center">
+
+            <!-- Image -->
+            <div class="col-4 col-md-2">
+              <img class="img-fluid rounded cart-thumbnail"
+                   [src]="getItemImage(item)"
+                   [alt]="item.product.title"
+                   (error)="onImageError($event)">
+            </div>
+
+            <!-- Title + category + unit price -->
+            <div class="col-8 col-md-4">
+              <a [routerLink]="['/product', item.product._id]"
+                 class="text-decoration-none text-dark">
+                <h6 class="mb-1 fw-semibold">{{ item.product.title }}</h6>
+              </a>
+              <small class="text-muted text-uppercase d-block">
+                {{ item.product.category }}
+              </small>
+              <span class="text-primary fw-bold">
+                £{{ item.product.price | number:'1.2-2' }}
+              </span>
+            </div>
+
+            <!-- Quantity controls -->
+            <div class="col-7 col-md-3">
+              <div class="input-group input-group-sm">
+                <button type="button"
+                        class="btn btn-outline-secondary"
+                        [disabled]="item.quantity <= 1"
+                        (click)="decreaseQuantity(item)"
+                        aria-label="Decrease quantity">
+                  &minus;
+                </button>
+                <input type="number"
+                       class="form-control text-center"
+                       [value]="item.quantity"
+                       min="1"
+                       [max]="item.product.inStock"
+                       (change)="onQuantityInput(item, $event)"
+                       aria-label="Quantity">
+                <button type="button"
+                        class="btn btn-outline-secondary"
+                        [disabled]="item.quantity >= (item.product.inStock ?? 0)"
+                        (click)="increaseQuantity(item)"
+                        aria-label="Increase quantity">
+                  &plus;
+                </button>
+              </div>
+              <small class="text-muted d-block mt-1"
+                     *ngIf="item.quantity >= (item.product.inStock ?? 0)">
+                Max stock reached
+              </small>
+            </div>
+
+            <!-- Subtotal + remove -->
+            <div class="col-5 col-md-3 text-end">
+              <div class="fw-bold mb-2">
+                £{{ rowSubtotal(item) | number:'1.2-2' }}
+              </div>
+              <button type="button"
+                      class="btn btn-sm btn-outline-danger"
+                      (click)="removeItem(item)">
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a [routerLink]="'/catalog'" class="btn btn-link">
+        &larr; Continue shopping
+      </a>
+    </div>
+
+    <!-- RIGHT: order summary -->
+    <div class="col-12 col-lg-4">
+      <div class="card border-0 shadow-sm summary-card">
+        <div class="card-body">
+          <h5 class="card-title mb-3">Order Summary</h5>
+
+          <div class="d-flex justify-content-between mb-2">
+            <span class="text-muted">Items</span>
+            <span>{{ cartItems.length }}</span>
+          </div>
+
+          <div class="d-flex justify-content-between mb-2">
+            <span class="text-muted">Subtotal</span>
+            <span>£{{ cartTotal | number:'1.2-2' }}</span>
+          </div>
+
+          <div class="d-flex justify-content-between mb-3">
+            <span class="text-muted">Delivery</span>
+            <span class="text-success">FREE</span>
+          </div>
+
+          <hr>
+
+          <div class="d-flex justify-content-between mb-4">
+            <strong class="fs-5">Total</strong>
+            <strong class="fs-5 text-primary">
+              £{{ cartTotal | number:'1.2-2' }}
+            </strong>
+          </div>
+
+          <button type="button"
+                  class="btn btn-primary w-100 btn-lg"
+                  (click)="proceedToCheckout()">
+            Proceed to Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

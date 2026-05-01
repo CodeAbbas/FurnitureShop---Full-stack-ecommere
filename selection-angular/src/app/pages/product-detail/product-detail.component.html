@@ -1,0 +1,272 @@
+<div class="container py-4">
+  <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1080;">
+    <div class="toast show align-items-center text-bg-success border-0"
+         *ngIf="toastMessage"
+         role="alert">
+      <div class="d-flex">
+        <div class="toast-body">
+          {{ toastMessage }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loading state -->
+  <div class="row" *ngIf="isLoading">
+    <div class="col-12 text-center py-5">
+      <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
+        <span class="visually-hidden">Loading product...</span>
+      </div>
+      <p class="mt-3 text-muted">Loading product details...</p>
+    </div>
+  </div>
+
+  <!-- Error state -->
+  <div class="row" *ngIf="!isLoading && errorMessage">
+    <div class="col-12">
+      <div class="alert alert-danger" role="alert">
+        <strong>Something went wrong:</strong> {{ errorMessage }}
+      </div>
+      <a [routerLink]="'/catalog'" class="btn btn-outline-primary">
+        &larr; Back to Catalogue
+      </a>
+    </div>
+  </div>
+
+  <!-- Product loaded -->
+  <ng-container *ngIf="!isLoading && !errorMessage && product">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="mb-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a [routerLink]="'/'">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a [routerLink]="'/catalog'">Catalogue</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          {{ product.title }}
+        </li>
+      </ol>
+    </nav>
+
+    <!-- Hero section: 2 columns -->
+    <div class="row g-4 mb-5">
+
+      <!-- LEFT column: image gallery -->
+      <div class="col-12 col-md-6">
+
+        <div class="position-relative mb-3">
+          <img class="img-fluid rounded shadow-sm w-100 detail-main-image"
+               [src]="selectedImage || fallbackImage"
+               [alt]="product.title"
+               (error)="onImageError($event)">
+
+          <span class="badge bg-success position-absolute top-0 start-0 m-3"
+                *ngIf="product.newArrival">
+            New Arrival
+          </span>
+          <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3"
+                *ngIf="product.topSelling">
+            Top Seller
+          </span>
+        </div>
+
+        <!-- Thumbnail strip (only if more than one image) -->
+        <div class="d-flex gap-2 flex-wrap"
+             *ngIf="product.images && product.images.length > 1">
+          <img *ngFor="let img of product.images"
+               [src]="img"
+               [alt]="product.title"
+               class="thumbnail-image rounded border"
+               [class.thumbnail-active]="img === selectedImage"
+               (click)="selectImage(img)"
+               (error)="onImageError($event)">
+        </div>
+      </div>
+
+      <!-- RIGHT column: details -->
+      <div class="col-12 col-md-6">
+
+        <small class="text-muted text-uppercase">
+          {{ product.category }} / {{ product.subcategory }}
+        </small>
+        <h1 class="fw-bold mt-1 mb-3">{{ product.title }}</h1>
+
+        <!-- Pricing -->
+        <div class="mb-3">
+          <span class="fs-2 fw-bold text-primary">
+            £{{ product.price | number:'1.2-2' }}
+          </span>
+          <del class="fs-5 text-muted ms-3" *ngIf="hasDiscount">
+            £{{ product.oldPrice | number:'1.2-2' }}
+          </del>
+        </div>
+
+        <!-- Stock status -->
+        <p class="mb-3" *ngIf="(product.inStock ?? 0) > 0">
+          <span class="badge bg-success">In Stock</span>
+          <span class="text-muted ms-2">{{ product.inStock }} available</span>
+        </p>
+        <p class="mb-3" *ngIf="(product.inStock ?? 0) === 0">
+          <span class="badge bg-danger">Out of Stock</span>
+        </p>
+
+        <!-- Description -->
+        <h5 class="mt-4">Description</h5>
+        <p class="text-muted">{{ product.description }}</p>
+
+        <!-- Specifications -->
+        <h5 class="mt-4">Specifications</h5>
+        <p class="text-muted">{{ product.specification }}</p>
+
+        <!-- CTA -->
+        <button type="button"
+                class="btn btn-primary btn-lg w-100 mt-3"
+                [disabled]="(product.inStock ?? 0) === 0"
+                (click)="onAddToCart(product)">
+          <ng-container *ngIf="(product.inStock ?? 0) > 0">Add to Cart</ng-container>
+          <ng-container *ngIf="(product.inStock ?? 0) === 0">Currently Unavailable</ng-container>
+        </button>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <!-- ===================================================== -->
+    <!-- Review section                                        -->
+    <!-- ===================================================== -->
+    <div class="row">
+      <div class="col-12">
+        <h3 class="mb-4">
+          Customer Reviews
+          <span class="badge bg-secondary ms-2" *ngIf="product.reviews">
+            {{ product.reviews.length }}
+          </span>
+        </h3>
+      </div>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- LEFT: existing reviews -->
+      <div class="col-12 col-lg-7">
+
+        <p class="text-muted" *ngIf="!product.reviews || product.reviews.length === 0">
+          No reviews yet — be the first to share your thoughts!
+        </p>
+
+        <div class="card bg-light mb-3 border-0 shadow-sm"
+             *ngFor="let review of product.reviews">
+          <div class="card-header bg-white d-flex justify-content-between align-items-center">
+            <strong>{{ review.username }}</strong>
+            <span class="text-warning" aria-label="rating">
+              <span *ngFor="let s of starsArray(review.stars)">&#9733;</span>
+              <span class="text-muted" *ngFor="let s of starsArray(5 - review.stars)">&#9734;</span>
+            </span>
+          </div>
+          <div class="card-body">
+            {{ review.comment }}
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: review form OR login CTA -->
+      <div class="col-12 col-lg-5">
+
+        <div class="card border-0 shadow-sm sticky-form">
+          <div class="card-body">
+
+            <!-- Logged-in: show form -->
+            <ng-container *ngIf="isLoggedIn; else loggedOut">
+              <h5 class="card-title mb-3">Leave a Review</h5>
+
+              <form [formGroup]="reviewForm" (ngSubmit)="onSubmitReview()" novalidate>
+
+                <!-- Stars -->
+                <div class="mb-3">
+                  <label for="stars" class="form-label">
+                    Rating <span class="text-danger">*</span>
+                  </label>
+                  <select id="stars"
+                          class="form-select"
+                          formControlName="stars"
+                          [ngClass]="{ 'is-invalid': isInvalid('stars') }">
+                    <option [ngValue]="5">5 stars — Excellent</option>
+                    <option [ngValue]="4">4 stars — Very Good</option>
+                    <option [ngValue]="3">3 stars — Average</option>
+                    <option [ngValue]="2">2 stars — Below Average</option>
+                    <option [ngValue]="1">1 star — Poor</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a rating between 1 and 5 stars.
+                  </div>
+                </div>
+
+                <!-- Comment -->
+                <div class="mb-3">
+                  <label for="comment" class="form-label">
+                    Your Review <span class="text-danger">*</span>
+                  </label>
+                  <textarea id="comment"
+                            class="form-control"
+                            rows="4"
+                            formControlName="comment"
+                            placeholder="Share your thoughts on this product..."
+                            [ngClass]="{ 'is-invalid': isInvalid('comment') }">
+                  </textarea>
+                  <div class="invalid-feedback">
+                    <ng-container *ngIf="reviewForm.controls['comment'].errors?.['required']">
+                      A comment is required.
+                    </ng-container>
+                    <ng-container *ngIf="reviewForm.controls['comment'].errors?.['minlength']">
+                      Comment must be at least 5 characters long.
+                    </ng-container>
+                    <ng-container *ngIf="reviewForm.controls['comment'].errors?.['maxlength']">
+                      Comment cannot exceed 500 characters.
+                    </ng-container>
+                  </div>
+                  <small class="text-muted">
+                    {{ reviewForm.controls['comment'].value?.length || 0 }} / 500
+                  </small>
+                </div>
+
+                <!-- Server feedback -->
+                <div class="alert alert-success" *ngIf="reviewSuccessMessage">
+                  {{ reviewSuccessMessage }}
+                </div>
+                <div class="alert alert-danger" *ngIf="reviewErrorMessage">
+                  {{ reviewErrorMessage }}
+                </div>
+
+                <button type="submit"
+                        class="btn btn-primary w-100"
+                        [disabled]="reviewForm.invalid || isSubmittingReview">
+                  <span class="spinner-border spinner-border-sm me-2"
+                        *ngIf="isSubmittingReview"
+                        role="status"></span>
+                  <ng-container *ngIf="!isSubmittingReview">Submit Review</ng-container>
+                  <ng-container *ngIf="isSubmittingReview">Submitting...</ng-container>
+                </button>
+              </form>
+            </ng-container>
+
+            <!-- Logged-out: prompt to log in -->
+            <ng-template #loggedOut>
+              <div class="text-center py-3">
+                <h5>Want to share your thoughts?</h5>
+                <p class="text-muted">
+                  Please log in to leave a review on this product.
+                </p>
+                <a [routerLink]="'/login'" class="btn btn-primary">
+                  Log in to Review
+                </a>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

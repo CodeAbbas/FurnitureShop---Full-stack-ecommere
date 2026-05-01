@@ -1,0 +1,13 @@
+.order-thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.order-card {
+  transition: box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+}

@@ -1,0 +1,12 @@
+.admin-thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+.table {
+  margin-bottom: 0;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.85rem 0.75rem;
+}

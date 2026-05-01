@@ -4,6 +4,7 @@ import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
 import { Product } from '../models/product.model';
+import { Review } from '../models/review.model';
 
 
 export interface ProductQueryParams {
@@ -115,6 +116,22 @@ export class ProductService {
             this.apiBaseUrl + '/admin/products/' + id
         ).pipe(catchError(this.handleError));
     }
+    getReviews(productId: string): Observable<Review[]> {
+    return this.http.get<Review[]>(
+      this.apiBaseUrl + '/products/' + productId + '/reviews'
+    ).pipe(catchError(this.handleError));
+  }
+
+  
+  addReview(
+    productId: string,
+    review: { username: string; comment: string; stars: number }
+  ): Observable<any> {
+    return this.http.post<any>(
+      this.apiBaseUrl + '/products/' + productId + '/reviews',
+      review
+    ).pipe(catchError(this.handleError));
+  }
 
 
     private handleError(error: HttpErrorResponse) {

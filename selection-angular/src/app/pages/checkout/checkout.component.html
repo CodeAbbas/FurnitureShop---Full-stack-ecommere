@@ -1,0 +1,225 @@
+<div class="container py-4">
+
+  <h1 class="fw-bold mb-4">Checkout</h1>
+
+  <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" novalidate>
+    <div class="row g-4">
+
+      <!-- ===================================================== -->
+      <!-- LEFT: Shipping + Payment form                          -->
+      <!-- ===================================================== -->
+      <div class="col-12 col-lg-8">
+
+        <!-- Shipping section -->
+        <div class="card border-0 shadow-sm mb-4">
+          <div class="card-body">
+            <h5 class="card-title mb-3">Shipping Information</h5>
+
+            <div class="mb-3">
+              <label for="fullName" class="form-label">
+                Full Name <span class="text-danger">*</span>
+              </label>
+              <input id="fullName"
+                     type="text"
+                     class="form-control"
+                     formControlName="fullName"
+                     placeholder="Jane Smith"
+                     [ngClass]="{ 'is-invalid': isInvalid('fullName') }">
+              <div class="invalid-feedback">
+                <ng-container *ngIf="checkoutForm.controls['fullName'].errors?.['required']">
+                  Your full name is required.
+                </ng-container>
+                <ng-container *ngIf="checkoutForm.controls['fullName'].errors?.['minlength']">
+                  Name must be at least 3 characters.
+                </ng-container>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address" class="form-label">
+                Delivery Address <span class="text-danger">*</span>
+              </label>
+              <textarea id="address"
+                        class="form-control"
+                        rows="3"
+                        formControlName="address"
+                        placeholder="123 High Street, London, NW1 1AA"
+                        [ngClass]="{ 'is-invalid': isInvalid('address') }">
+              </textarea>
+              <div class="invalid-feedback">
+                <ng-container *ngIf="checkoutForm.controls['address'].errors?.['required']">
+                  A delivery address is required.
+                </ng-container>
+                <ng-container *ngIf="checkoutForm.controls['address'].errors?.['minlength']">
+                  Address must be at least 10 characters.
+                </ng-container>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment section -->
+        <div class="card border-0 shadow-sm mb-4">
+          <div class="card-body">
+            <h5 class="card-title mb-3">Payment Details</h5>
+
+            <div class="alert alert-info small mb-3" role="alert">
+              <strong>Demo only:</strong> This is a coursework prototype — no real
+              payment is processed. Use any 16-digit number for testing
+              (e.g. 4242 4242 4242 4242).
+            </div>
+
+            <div class="mb-3">
+              <label for="cardNumber" class="form-label">
+                Card Number <span class="text-danger">*</span>
+              </label>
+              <input id="cardNumber"
+                     type="text"
+                     inputmode="numeric"
+                     maxlength="16"
+                     class="form-control"
+                     formControlName="cardNumber"
+                     placeholder="4242424242424242"
+                     [ngClass]="{ 'is-invalid': isInvalid('cardNumber') }">
+              <div class="invalid-feedback">
+                <ng-container *ngIf="checkoutForm.controls['cardNumber'].errors?.['required']">
+                  A card number is required.
+                </ng-container>
+                <ng-container *ngIf="checkoutForm.controls['cardNumber'].errors?.['pattern']">
+                  Card number must be exactly 16 digits, no spaces.
+                </ng-container>
+              </div>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-6">
+                <label for="expiry" class="form-label">
+                  Expiry (MM/YY) <span class="text-danger">*</span>
+                </label>
+                <input id="expiry"
+                       type="text"
+                       maxlength="5"
+                       class="form-control"
+                       formControlName="expiry"
+                       placeholder="12/27"
+                       [ngClass]="{ 'is-invalid': isInvalid('expiry') }">
+                <div class="invalid-feedback">
+                  <ng-container *ngIf="checkoutForm.controls['expiry'].errors?.['required']">
+                    Expiry is required.
+                  </ng-container>
+                  <ng-container *ngIf="checkoutForm.controls['expiry'].errors?.['pattern']">
+                    Use MM/YY format (e.g. 12/27).
+                  </ng-container>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <label for="cvv" class="form-label">
+                  CVV <span class="text-danger">*</span>
+                </label>
+                <input id="cvv"
+                       type="text"
+                       inputmode="numeric"
+                       maxlength="4"
+                       class="form-control"
+                       formControlName="cvv"
+                       placeholder="123"
+                       [ngClass]="{ 'is-invalid': isInvalid('cvv') }">
+                <div class="invalid-feedback">
+                  <ng-container *ngIf="checkoutForm.controls['cvv'].errors?.['required']">
+                    CVV is required.
+                  </ng-container>
+                  <ng-container *ngIf="checkoutForm.controls['cvv'].errors?.['pattern']">
+                    CVV must be 3 or 4 digits.
+                  </ng-container>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Server error feedback -->
+        <div class="alert alert-danger" *ngIf="errorMessage" role="alert">
+          <strong>Order failed:</strong> {{ errorMessage }}
+        </div>
+
+        <!-- Mobile-only submit (the desktop button lives in the
+             summary card; mobile users would otherwise have to
+             scroll back up to find it) -->
+        <button type="submit"
+                class="btn btn-primary btn-lg w-100 d-lg-none mb-3"
+                [disabled]="checkoutForm.invalid || isSubmitting">
+          <span class="spinner-border spinner-border-sm me-2"
+                *ngIf="isSubmitting" role="status"></span>
+          <ng-container *ngIf="!isSubmitting">Place Order</ng-container>
+          <ng-container *ngIf="isSubmitting">Processing...</ng-container>
+        </button>
+
+        <a [routerLink]="'/cart'" class="btn btn-link">
+          &larr; Back to cart
+        </a>
+      </div>
+
+      <!-- ===================================================== -->
+      <!-- RIGHT: Read-only order summary                         -->
+      <!-- ===================================================== -->
+      <div class="col-12 col-lg-4">
+        <div class="card border-0 shadow-sm summary-card">
+          <div class="card-body">
+            <h5 class="card-title mb-3">Your Order</h5>
+
+            <!-- Item list -->
+            <div class="mb-3" *ngFor="let item of cartItems">
+              <div class="d-flex align-items-center">
+                <img class="rounded summary-thumbnail"
+                     [src]="getItemImage(item)"
+                     [alt]="item.product.title"
+                     (error)="onImageError($event)">
+                <div class="ms-3 flex-grow-1">
+                  <div class="fw-semibold small">{{ item.product.title }}</div>
+                  <small class="text-muted">
+                    £{{ item.product.price | number:'1.2-2' }} &times; {{ item.quantity }}
+                  </small>
+                </div>
+                <div class="text-end fw-bold small">
+                  £{{ rowSubtotal(item) | number:'1.2-2' }}
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted">Subtotal</span>
+              <span>£{{ cartTotal | number:'1.2-2' }}</span>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+              <span class="text-muted">Delivery</span>
+              <span class="text-success">FREE</span>
+            </div>
+
+            <hr>
+
+            <div class="d-flex justify-content-between mb-4">
+              <strong class="fs-5">Total</strong>
+              <strong class="fs-5 text-primary">
+                £{{ cartTotal | number:'1.2-2' }}
+              </strong>
+            </div>
+
+            <!-- Desktop submit button (hidden on mobile to avoid
+                 duplicate buttons; mobile gets one in the form column) -->
+            <button type="submit"
+                    class="btn btn-primary btn-lg w-100 d-none d-lg-block"
+                    [disabled]="checkoutForm.invalid || isSubmitting">
+              <span class="spinner-border spinner-border-sm me-2"
+                    *ngIf="isSubmitting" role="status"></span>
+              <ng-container *ngIf="!isSubmitting">Place Order</ng-container>
+              <ng-container *ngIf="isSubmitting">Processing...</ng-container>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

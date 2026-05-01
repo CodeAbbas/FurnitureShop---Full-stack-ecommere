@@ -1,0 +1,30 @@
+.detail-main-image {
+  height: 450px;
+  object-fit: cover;
+}
+
+.thumbnail-image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, border-color 0.2s ease;
+}
+
+.thumbnail-image:hover {
+  opacity: 1;
+}
+
+.thumbnail-active {
+  opacity: 1;
+  border-color: var(--bs-primary) !important;
+  border-width: 2px !important;
+}
+
+@media (min-width: 992px) {
+  .sticky-form {
+    position: sticky;
+    top: 90px;
+  }
+}

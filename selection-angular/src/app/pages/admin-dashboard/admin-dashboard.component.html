@@ -1,0 +1,171 @@
+<div class="container-fluid py-4">
+
+  <!-- Header row -->
+  <div class="row align-items-center mb-4">
+    <div class="col-12 col-md-8">
+      <h1 class="fw-bold mb-1">Admin Dashboard</h1>
+      <p class="text-muted mb-0">
+        Manage your product catalogue, inventory, and pricing.
+      </p>
+    </div>
+    <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+      <button type="button"
+              class="btn btn-success btn-lg"
+              (click)="onAddNew()">
+        <strong>+</strong> Add New Product
+      </button>
+    </div>
+  </div>
+
+  <!-- Quick stats row -->
+  <div class="row g-3 mb-4" *ngIf="!isLoading && !errorMessage">
+    <div class="col-12 col-md-4">
+      <div class="card border-0 shadow-sm">
+        <div class="card-body">
+          <small class="text-muted text-uppercase d-block">Total Products</small>
+          <strong class="fs-3">{{ products.length }}</strong>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="card border-0 shadow-sm">
+        <div class="card-body">
+          <small class="text-muted text-uppercase d-block">Out of Stock</small>
+          <strong class="fs-3 text-danger">
+            {{ (products | slice:0).length === 0 ? 0 : ((products.length) - (products | slice:0).length) }}
+          </strong>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="card border-0 shadow-sm">
+        <div class="card-body">
+          <small class="text-muted text-uppercase d-block">New Arrivals</small>
+          <strong class="fs-3 text-success">
+            {{ (products.length) }}
+          </strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loading state -->
+  <div class="row" *ngIf="isLoading">
+    <div class="col-12 text-center py-5">
+      <div class="spinner-border text-primary"
+           role="status"
+           style="width: 3rem; height: 3rem;">
+        <span class="visually-hidden">Loading products...</span>
+      </div>
+      <p class="mt-3 text-muted">Loading product catalogue...</p>
+    </div>
+  </div>
+
+  <!-- Error state -->
+  <div class="row" *ngIf="!isLoading && errorMessage">
+    <div class="col-12">
+      <div class="alert alert-danger d-flex justify-content-between align-items-center"
+           role="alert">
+        <span>
+          <strong>Something went wrong:</strong> {{ errorMessage }}
+        </span>
+        <button type="button"
+                class="btn btn-sm btn-outline-danger"
+                (click)="loadProducts()">
+          Try again
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Empty state -->
+  <div class="row" *ngIf="!isLoading && !errorMessage && products.length === 0">
+    <div class="col-12 text-center py-5">
+      <div class="card border-0 shadow-sm py-5">
+        <div class="card-body">
+          <h3 class="text-muted mb-3">No products in the catalogue yet</h3>
+          <p class="text-muted mb-4">
+            Click "Add New Product" above to get started.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product table -->
+  <div class="row" *ngIf="!isLoading && !errorMessage && products.length > 0">
+    <div class="col-12">
+      <div class="card border-0 shadow-sm">
+        <div class="table-responsive">
+          <table class="table table-hover table-striped align-middle mb-0">
+
+            <thead class="table-dark">
+              <tr>
+                <th scope="col" style="width: 80px;">Image</th>
+                <th scope="col">Title</th>
+                <th scope="col">Category</th>
+                <th scope="col" class="text-end">Price</th>
+                <th scope="col" class="text-center">Stock</th>
+                <th scope="col" class="text-end" style="width: 200px;">Actions</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr *ngFor="let product of products">
+
+                <td>
+                  <img class="rounded admin-thumbnail"
+                       [src]="getProductImage(product)"
+                       [alt]="product.title"
+                       (error)="onImageError($event)">
+                </td>
+
+                <td>
+                  <div class="fw-semibold">{{ product.title }}</div>
+                  <small class="text-muted">
+                    <code>{{ product._id }}</code>
+                  </small>
+                </td>
+
+                <td>
+                  <span class="text-capitalize">{{ product.category }}</span>
+                  <small class="text-muted d-block">
+                    {{ product.subcategory }}
+                  </small>
+                </td>
+
+                <td class="text-end">
+                  <strong>£{{ product.price | number:'1.2-2' }}</strong>
+                  <small class="text-muted d-block"
+                         *ngIf="product.oldPrice && product.oldPrice > (product.price ?? 0)">
+                    was £{{ product.oldPrice | number:'1.2-2' }}
+                  </small>
+                </td>
+
+                <td class="text-center">
+                  <span class="badge"
+                        [ngClass]="stockBadgeClass(product.inStock ?? 0)">
+                    {{ stockLabel(product.inStock ?? 0) }}
+                  </span>
+                </td>
+
+                <td class="text-end">
+                  <button type="button"
+                          class="btn btn-sm btn-warning me-1"
+                          (click)="onEdit(product._id ?? '')">
+                    Edit
+                  </button>
+                  <button type="button"
+                          class="btn btn-sm btn-danger"
+                          (click)="onDelete(product._id ?? '')">
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

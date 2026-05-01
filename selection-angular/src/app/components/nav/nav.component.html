@@ -1,0 +1,106 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+
+    <!-- Brand -->
+    <a class="navbar-brand fw-bold" [routerLink]="'/'">
+      Selection Furniture
+    </a>
+
+    <!-- Hamburger toggle (mobile) -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible region -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+
+      <!-- Left-aligned primary links (always visible) -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link"
+             [routerLink]="'/'"
+             routerLinkActive="active"
+             [routerLinkActiveOptions]="{ exact: true }">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             [routerLink]="'/catalog'"
+             routerLinkActive="active">
+            Catalog
+          </a>
+        </li>
+
+        <!-- Customer-only link -->
+        <li class="nav-item" *ngIf="isLoggedIn && !isAdmin">
+          <a class="nav-link" [routerLink]="'/cart'" routerLinkActive="active">
+            Cart
+            <span class="badge rounded-pill bg-warning text-dark ms-1" *ngIf="(cartCount$ | async) as count"
+              [hidden]="count === 0">
+              {{ count }}
+            </span>
+          </a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn && !isAdmin">
+          <a class="nav-link" [routerLink]="'/orders'" routerLinkActive="active">
+            Orders
+          </a>
+        </li>
+
+        <!-- Admin-only link -->
+        <li class="nav-item" *ngIf="isAdmin">
+          <a class="nav-link"
+             [routerLink]="'/admin/dashboard'"
+             routerLinkActive="active">
+            Admin Dashboard
+          </a>
+        </li>
+      </ul>
+
+      <!-- Right-aligned account actions -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+
+        <!-- Guest branch -->
+        <ng-container *ngIf="!isLoggedIn">
+          <li class="nav-item">
+            <a class="btn btn-outline-light me-2"
+               [routerLink]="'/login'">
+              Login
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-light"
+               [routerLink]="'/register'">
+              Register
+            </a>
+          </li>
+        </ng-container>
+
+        <!-- Authenticated branch (customer or admin) -->
+        <ng-container *ngIf="isLoggedIn">
+          <li class="nav-item me-lg-3">
+            <span class="navbar-text text-light">
+              Hello, <strong>{{ username }}</strong>
+            </span>
+          </li>
+          <li class="nav-item">
+            <button type="button"
+                    class="btn btn-outline-light"
+                    (click)="logout()">
+              Logout
+            </button>
+          </li>
+        </ng-container>
+
+      </ul>
+    </div>
+  </div>
+</nav>
