@@ -1,0 +1,212 @@
+/* ===================================================
+   1. Hero banner
+   =================================================== */
+
+.hero-section {
+  min-height: 60vh;
+  margin-top: -20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+              url('https://picsum.photos/seed/hero-bg/1600/900') center / cover no-repeat;
+}
+
+.enhanced-gallery {
+  padding: 20px 0 50px 0;
+}
+
+.new-gallery {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.new-photos {
+  overflow: hidden;
+  position: relative;
+  height: 590px;
+}
+
+.new-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.new-slide.active {
+  opacity: 1;
+}
+
+.new-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.new-slide:hover img {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+.new-slide-caption {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.new-slide-caption h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.new-slide-caption p {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.new-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none; /* Let clicks fall through to slides */
+}
+
+.new-prev,
+.new-next {
+  pointer-events: auto;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px 16px;
+  margin: 0 12px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.new-prev:hover,
+.new-next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.dot-mid {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.new-dots {
+  display: inline-flex;
+  list-style: none;
+  padding: 8px;
+  margin: -126px 0 auto;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+}
+
+.new-dots li {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.new-dots li.active {
+  background: #343a40;
+}
+
+.new-dots li:hover {
+  background: #666;
+}
+
+@media (max-width: 768px) {
+  .new-photos { height: 300px; }
+  .new-slide-caption { left: 20px; right: 20px; bottom: 20px; }
+  .new-slide-caption h2 { font-size: 1.5rem; }
+  .new-slide-caption p { font-size: 0.9rem; }
+  .new-prev, .new-next { padding: 8px 12px; }
+  .new-dots li { width: 10px; height: 10px; }
+}
+
+@media (max-width: 576px) {
+  .new-photos { height: 250px; }
+  .hero-section { min-height: 45vh; }
+}
+
+
+.lookbook-item {
+  cursor: pointer;
+}
+
+.lookbook-item img {
+  height: 320px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.lookbook-item:hover img,
+.lookbook-item:focus-within img {
+  transform: scale(1.05);
+}
+
+.lookbook-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lookbook-item:hover .lookbook-overlay,
+.lookbook-item:focus-within .lookbook-overlay {
+  opacity: 1;
+}
+
+.lookbook-content h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.product-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.04);
+}
+
+.product-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 3em;
+  font-size: 1rem;
+}

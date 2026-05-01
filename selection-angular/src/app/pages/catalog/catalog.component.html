@@ -1,27 +1,85 @@
 <div class="container py-4">
   <!-- Toast feedback banner -->
-  <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1080;">
-    <div class="toast show align-items-center text-bg-success border-0"
-         *ngIf="toastMessage"
-         role="alert">
-      <div class="d-flex">
-        <div class="toast-body">
-          {{ toastMessage }}
-        </div>
-      </div>
-    </div>
-  </div>
+  <app-toast [message]="toastMessage" [type]="toastType"></app-toast>
 
   <!-- Page heading -->
   <div class="row mb-4">
     <div class="col-12">
       <h1 class="fw-bold">Our Furniture Catalogue</h1>
       <p class="text-muted mb-0">
-        Browse our complete range of curated furniture pieces.
+        Browse our complete range — search, filter, and sort to find your perfect piece.
       </p>
     </div>
   </div>
+  <!-- ============================================================
+       Filter, search, and sort controls
+       ============================================================ -->
+  <div class="card border-0 shadow-sm mb-4">
+    <div class="card-body">
+      <div class="row g-3 align-items-end">
 
+        <!-- Search input -->
+        <div class="col-12 col-lg-5">
+          <label for="searchInput" class="form-label small text-muted">Search</label>
+          <div class="input-group">
+            <span class="input-group-text bg-white" id="search-icon">
+              &#128269;
+            </span>
+            <input id="searchInput"
+                   type="search"
+                   class="form-control"
+                   placeholder="Search by title..."
+                   aria-describedby="search-icon"
+                   [formControl]="searchControl">
+          </div>
+        </div>
+
+        <!-- Category dropdown -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <label for="categorySelect" class="form-label small text-muted">Category</label>
+          <select id="categorySelect"
+                  class="form-select"
+                  [value]="categoryFilterSubject.value"
+                  (change)="onCategoryChange($any($event.target).value)">
+            <option value="all">All Categories</option>
+            <option *ngFor="let cat of categories$ | async"
+                    [value]="cat">
+              {{ cat }}
+            </option>
+          </select>
+        </div>
+
+        <!-- Price band -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <label for="priceSelect" class="form-label small text-muted">Price</label>
+          <select id="priceSelect"
+                  class="form-select"
+                  [value]="priceFilterSubject.value"
+                  (change)="onPriceChange($any($event.target).value)">
+            <option value="all">Any Price</option>
+            <option value="under-200">Under £200</option>
+            <option value="200-500">£200 — £500</option>
+            <option value="500-1000">£500 — £1,000</option>
+            <option value="over-1000">Over £1,000</option>
+          </select>
+        </div>
+
+        <!-- Sort -->
+        <div class="col-12 col-md-4 col-lg-3">
+          <label for="sortSelect" class="form-label small text-muted">Sort by</label>
+          <select id="sortSelect"
+                  class="form-select"
+                  [value]="sortFilterSubject.value"
+                  (change)="onSortChange($any($event.target).value)">
+            <option value="default">Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="name-asc">Name: A — Z</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Loading state -->
   <div class="row" *ngIf="isLoading">
@@ -48,88 +106,100 @@
       </div>
     </div>
   </div>
+  <ng-container *ngIf="!isLoading && !errorMessage">
+    <ng-container *ngIf="filteredProducts$ | async as visible">
 
-  <!-- Empty state -->
-  <div class="row" *ngIf="!isLoading && !errorMessage && products.length === 0">
-    <div class="col-12 text-center py-5">
-      <h4 class="text-muted">No products found.</h4>
-      <p class="text-muted">Please check back later or contact our support team.</p>
-    </div>
-  </div>
-
-  <!-- Product grid -->
-  <div class="row g-4" *ngIf="!isLoading && !errorMessage && products.length > 0">
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3"
-         *ngFor="let product of products">
-
-      <div class="card h-100 shadow-sm border-0 product-card">
-
-        <!-- Image with absolute-positioned badges -->
-        <div class="position-relative overflow-hidden">
-
-          <a [routerLink]="['/product', product._id]">
-            <img class="card-img-top product-image"
-                 [src]="getProductImage(product)"
-                 [alt]="product.title"
-                 (error)="onImageError($event)">
-          </a>
-
-          <!-- New Arrival badge (top-left) -->
-          <span class="badge bg-success position-absolute top-0 start-0 m-2"
-                *ngIf="product.newArrival">
-            New
-          </span>
-
-          <!-- Top Selling badge (top-right) -->
-          <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2"
-                *ngIf="product.topSelling">
-            Top Seller
-          </span>
-
-          <!-- Out-of-stock overlay (bottom-left) -->
-          <span class="badge bg-danger position-absolute bottom-0 start-0 m-2"
-                *ngIf="product.inStock === 0">
-            Out of stock
-          </span>
-        </div>
-
-        <!-- Card body -->
-        <div class="card-body d-flex flex-column">
-
-          <!-- Category eyebrow -->
-          <small class="text-muted text-uppercase mb-1">
-            {{ product.category }}
+      <!-- Result count badge -->
+      <div class="row mb-3" *ngIf="visible.length > 0">
+        <div class="col-12">
+          <small class="text-muted">
+            Showing <strong>{{ visible.length }}</strong> product<span *ngIf="visible.length !== 1">s</span>
           </small>
-
-          <!-- Title (clamped to 2 lines via CSS) -->
-          <h5 class="card-title product-title">
-            <a [routerLink]="['/product', product._id]"
-               class="text-decoration-none text-dark stretched-link-target">
-              {{ product.title }}
-            </a>
-          </h5>
-
-          <!-- Price + strikethrough discount -->
-          <div class="mb-3">
-            <span class="fs-5 fw-bold text-primary">
-              £{{ product.price | number:'1.2-2' }}
-            </span>
-            <del class="text-muted ms-2"
-                 *ngIf="hasDiscount(product)">
-              £{{ product.oldPrice | number:'1.2-2' }}
-            </del>
-          </div>
-
-          <!-- Add to Cart pinned to the bottom of the card -->
-          <button type="button"
-                  class="btn btn-primary mt-auto"
-                  [disabled]="(product.inStock ?? 0) === 0"
-                  (click)="onAddToCart(product)">
-            <ng-container *ngIf="(product.inStock ?? 0) > 0">Add to Cart</ng-container>
-            <ng-container *ngIf="(product.inStock ?? 0) === 0">Unavailable</ng-container>
-          </button>
         </div>
       </div>
-    </div>
-  </div>
+
+      <!-- Empty filter result -->
+      <div class="row" *ngIf="visible.length === 0">
+        <div class="col-12 text-center py-5">
+          <div class="card border-0 shadow-sm py-4">
+            <div class="card-body">
+              <h4 class="text-muted mb-3">No products match your search</h4>
+              <p class="text-muted mb-4">
+                Try widening your filters or clearing them entirely.
+              </p>
+              <button type="button"
+                      class="btn btn-primary"
+                      (click)="clearFilters()">
+                Clear filters
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product grid -->
+      <div class="row g-4" *ngIf="visible.length > 0">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3"
+             *ngFor="let product of visible; trackBy: trackByProductId">
+
+          <div class="card h-100 shadow-sm border-0 product-card">
+
+            <div class="position-relative overflow-hidden">
+              <a [routerLink]="['/product', product._id]">
+                <img class="card-img-top product-image"
+                     [src]="getProductImage(product)"
+                     [alt]="product.title"
+                     (error)="onImageError($event)">
+              </a>
+
+              <span class="badge bg-success position-absolute top-0 start-0 m-2"
+                    *ngIf="product.newArrival">
+                New
+              </span>
+              <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2"
+                    *ngIf="product.topSelling">
+                Top Seller
+              </span>
+              <span class="badge bg-danger position-absolute bottom-0 start-0 m-2"
+                    *ngIf="product.inStock === 0">
+                Out of stock
+              </span>
+            </div>
+
+            <div class="card-body d-flex flex-column">
+              <small class="text-muted text-uppercase mb-1">
+                {{ product.category }}
+              </small>
+
+              <h5 class="card-title product-title">
+                <a [routerLink]="['/product', product._id]"
+                   class="text-decoration-none text-dark">
+                  {{ product.title }}
+                </a>
+              </h5>
+
+              <div class="mb-3">
+                <span class="fs-5 fw-bold text-primary">
+                  £{{ product.price | number:'1.2-2' }}
+                </span>
+                <del class="text-muted ms-2"
+                     *ngIf="hasDiscount(product)">
+                  £{{ product.oldPrice | number:'1.2-2' }}
+                </del>
+              </div>
+
+              <button type="button"
+                      class="btn btn-primary mt-auto"
+                      [disabled]="(product.inStock ?? 0) === 0"
+                      (click)="onAddToCart(product)">
+                <ng-container *ngIf="(product.inStock ?? 0) > 0">Add to Cart</ng-container>
+                <ng-container *ngIf="(product.inStock ?? 0) === 0">Unavailable</ng-container>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </ng-container>
+  </ng-container>
 </div>

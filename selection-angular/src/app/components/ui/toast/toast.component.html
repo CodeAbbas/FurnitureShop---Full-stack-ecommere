@@ -1,0 +1,16 @@
+<div class="toast-container position-fixed end-0 p-3"
+     style="top: 70px; z-index: 9999;"
+     *ngIf="message">
+     
+  <div class="toast show align-items-center border-0 shadow-lg"
+       [ngClass]="bgClass"
+       role="alert"
+       aria-live="assertive"
+       aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body fw-medium">
+        {{ message }}
+      </div>
+    </div>
+  </div>
+</div>

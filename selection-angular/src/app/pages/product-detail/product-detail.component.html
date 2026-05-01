@@ -1,15 +1,5 @@
 <div class="container py-4">
-  <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1080;">
-    <div class="toast show align-items-center text-bg-success border-0"
-         *ngIf="toastMessage"
-         role="alert">
-      <div class="d-flex">
-        <div class="toast-body">
-          {{ toastMessage }}
-        </div>
-      </div>
-    </div>
-  </div>
+  <app-toast [message]="toastMessage" [type]="toastType"></app-toast>
 
   <!-- Loading state -->
   <div class="row" *ngIf="isLoading">

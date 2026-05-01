@@ -1,0 +1,206 @@
+<!-- =================================================== -->
+<!-- 1. Hero banner                                       -->
+<!-- =================================================== -->
+<section class="hero-section text-white text-center d-flex align-items-center">
+  <div class="container">
+    <h1 class="display-3 fw-bold mb-3">Selection Furniture</h1>
+    <p class="lead mb-4">
+      Curated pieces for modern living — built to last, designed to belong.
+    </p>
+    <a [routerLink]="'/catalog'" class="btn btn-light btn-lg px-4">
+      Shop the Collection
+    </a>
+  </div>
+</section>
+
+<!-- =================================================== -->
+<!-- 2. Image gallery slider (.new-gallery)               -->
+<!-- =================================================== -->
+<section class="enhanced-gallery">
+  <div class="container">
+
+    <div class="new-gallery"
+         (mouseenter)="pauseAutoplay()"
+         (mouseleave)="resumeAutoplay()">
+
+      <!-- Slides -->
+      <div class="new-photos">
+        <div class="new-slide"
+             *ngFor="let slide of slides; let i = index; trackBy: trackByIndex"
+             [class.active]="i === currentSlide">
+          <img [src]="slide.image"
+               [alt]="slide.title"
+               (error)="onImageError($event)">
+          <div class="new-slide-caption">
+            <h2>{{ slide.title }}</h2>
+            <p>{{ slide.subtitle }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prev / Next buttons -->
+      <div class="new-buttons">
+        <button type="button"
+                class="new-prev"
+                (click)="prevSlide()"
+                aria-label="Previous slide">
+          &#10094;
+        </button>
+        <button type="button"
+                class="new-next"
+                (click)="nextSlide()"
+                aria-label="Next slide">
+          &#10095;
+        </button>
+      </div>
+
+      <!-- Dots -->
+      <div class="dot-mid">
+        <ul class="new-dots">
+          <li *ngFor="let slide of slides; let i = index; trackBy: trackByIndex"
+              [class.active]="i === currentSlide"
+              (click)="goToSlide(i)"
+              [attr.aria-label]="'Go to slide ' + (i + 1)"
+              role="button"
+              tabindex="0">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================== -->
+<!-- 3. Lookbook grid                                     -->
+<!-- =================================================== -->
+<section class="lookbook-section py-5">
+  <div class="container">
+
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Shop the Lookbook</h2>
+      <p class="text-muted">Explore our collections by category.</p>
+    </div>
+
+    <!-- Loading -->
+    <div class="row" *ngIf="isLoadingProducts">
+      <div class="col-12 text-center py-4">
+        <div class="spinner-border text-primary" role="status"></div>
+      </div>
+    </div>
+
+    <!-- Lookbook tiles -->
+    <div class="row g-4" *ngIf="!isLoadingProducts && lookbookEntries.length > 0">
+      <div class="col-12 col-sm-6 col-md-4"
+           *ngFor="let entry of lookbookEntries">
+        <a [routerLink]="'/catalog'"
+           [queryParams]="{ category: entry.category }"
+           class="lookbook-item d-block text-decoration-none">
+          <div class="position-relative overflow-hidden rounded">
+            <img [src]="entry.image"
+                 [alt]="entry.category"
+                 class="img-fluid w-100"
+                 (error)="onImageError($event)">
+            <div class="lookbook-overlay d-flex align-items-center justify-content-center">
+              <div class="lookbook-content text-center">
+                <h3 class="text-uppercase mb-2">{{ entry.category }}</h3>
+                <span class="btn btn-light btn-sm">Shop Now</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================== -->
+<!-- 4. Featured products                                 -->
+<!-- =================================================== -->
+<section class="featured-products py-5 bg-light">
+  <div class="container">
+
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Featured Products</h2>
+      <p class="text-muted">Handpicked pieces from our latest catalogue.</p>
+    </div>
+
+    <!-- Loading -->
+    <div class="row" *ngIf="isLoadingProducts">
+      <div class="col-12 text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading featured products...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Error -->
+    <div class="row" *ngIf="!isLoadingProducts && errorMessage">
+      <div class="col-12">
+        <div class="alert alert-danger" role="alert">
+          <strong>Could not load featured products:</strong> {{ errorMessage }}
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured grid -->
+    <div class="row g-4"
+         *ngIf="!isLoadingProducts && !errorMessage && featuredProducts.length > 0">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3"
+           *ngFor="let product of featuredProducts; trackBy: trackByProductId">
+
+        <div class="card h-100 shadow-sm border-0 product-card">
+
+          <div class="position-relative overflow-hidden">
+            <a [routerLink]="['/product', product._id]">
+              <img class="card-img-top product-image"
+                   [src]="getProductImage(product)"
+                   [alt]="product.title"
+                   (error)="onImageError($event)">
+            </a>
+
+            <span class="badge bg-success position-absolute top-0 start-0 m-2"
+                  *ngIf="product.newArrival">
+              New
+            </span>
+            <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2"
+                  *ngIf="product.topSelling">
+              Top Seller
+            </span>
+          </div>
+
+          <div class="card-body d-flex flex-column">
+            <small class="text-muted text-uppercase mb-1">
+              {{ product.category }}
+            </small>
+
+            <h5 class="card-title product-title">
+              <a [routerLink]="['/product', product._id]"
+                 class="text-decoration-none text-dark">
+                {{ product.title }}
+              </a>
+            </h5>
+
+            <div class="mt-auto">
+              <span class="fs-5 fw-bold text-primary">
+                £{{ product.price | number:'1.2-2' }}
+              </span>
+              <del class="text-muted ms-2"
+                   *ngIf="hasDiscount(product)">
+                £{{ product.oldPrice | number:'1.2-2' }}
+              </del>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Browse-all CTA -->
+    <div class="text-center mt-4"
+         *ngIf="!isLoadingProducts && !errorMessage && featuredProducts.length > 0">
+      <a [routerLink]="'/catalog'"
+         class="btn btn-outline-dark btn-lg px-4">
+        View Full Catalogue
+      </a>
+    </div>
+  </div>
+</section>

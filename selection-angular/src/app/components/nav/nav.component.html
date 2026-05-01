@@ -10,16 +10,15 @@
     <button
       class="navbar-toggler"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#mainNavbar"
+      (click)="toggleMenu()" 
       aria-controls="mainNavbar"
-      aria-expanded="false"
+      [attr.aria-expanded]="!isMenuCollapsed"
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- Collapsible region -->
-    <div class="collapse navbar-collapse" id="mainNavbar">
+    <div class="collapse navbar-collapse" id="mainNavbar" [class.show]="!isMenuCollapsed">
 
       <!-- Left-aligned primary links (always visible) -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">

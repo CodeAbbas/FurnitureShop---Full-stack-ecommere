@@ -1,9 +1,12 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
+
 
 import { ProductService } from '../../services/product.service';
 import { Product } from '../../models/product.model';
+
 
 @Component({
   selector: 'app-admin-dashboard',
@@ -16,6 +19,7 @@ import { Product } from '../../models/product.model';
 export class AdminDashboardComponent implements OnInit {
 
   private productService = inject(ProductService);
+  private router = inject(Router);
 
   products: Product[] = [];
   isLoading: boolean = true;
@@ -27,6 +31,7 @@ export class AdminDashboardComponent implements OnInit {
   ngOnInit(): void {
     this.loadProducts();
   }
+  
 
   // ============================================================
   //  Data fetching
@@ -84,20 +89,40 @@ export class AdminDashboardComponent implements OnInit {
     }
     return String(inStock);
   }
+  get outOfStockCount(): number {
+    return this.products.filter((p) => p.inStock === 0).length;
+  }
+  get newArrivalCount(): number {
+    return this.products.filter((p) => p.newArrival).length;
+  }
 
   // ============================================================
   //  Action stubs
   // ============================================================
 
   onEdit(productId: string): void {
-    console.log('[AdminDashboard] Edit pending ProductForm:', productId);
+    this.router.navigate(['/admin/products', productId, 'edit']);
   }
 
   onDelete(productId: string): void {
-    console.log('[AdminDashboard] Delete pending confirm modal:', productId);
+    const confirmed = window.confirm(
+      'Are you sure you want to delete this product? This action cannot be undone.'
+    );
+    if (!confirmed) {
+      return;
+    }
+
+    this.productService.deleteProduct(productId).subscribe({
+      next: () => {
+        this.loadProducts();
+      },
+      error: (err: Error) => {
+        this.errorMessage = err.message;
+      }
+    });
   }
 
   onAddNew(): void {
-    console.log('[AdminDashboard] Add new pending ProductForm.');
+    this.router.navigate(['/admin/products/new']);
   }
 }

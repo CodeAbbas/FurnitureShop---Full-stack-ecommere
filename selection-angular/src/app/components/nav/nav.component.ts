@@ -18,6 +18,11 @@ export class NavComponent {
   private authService = inject(AuthService);
   private router = inject(Router);
 
+  isMenuCollapsed: boolean = true;
+  toggleMenu(): void {
+    this.isMenuCollapsed = !this.isMenuCollapsed;
+  }
+
   get isLoggedIn(): boolean {
     return this.authService.isLoggedIn();
   }

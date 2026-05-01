@@ -1,1 +1,48 @@
-<p>footer works!</p>
+<footer class="bg-dark text-light py-5 mt-auto">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Company Info -->
+      <div class="col-12 col-md-4">
+        <h5 class="fw-bold mb-3">Selection Furniture</h5>
+        <p class=" mb-2">
+          <!-- Using standard HTML hex codes for basic icons so we don't need external font libraries -->
+          <span class="me-2">&#128205;</span>72 Queens Market, E13 9BA, London
+        </p>
+        <p class=" mb-2">
+          <span class="me-2">&#128222;</span>07434080902
+        </p>
+        <p class="">
+          <span class="me-2">&#128337;</span>Daily 09:00–18:00
+        </p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="col-12 col-md-4">
+        <h5 class="fw-bold mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a [routerLink]="'/'" class=" text-decoration-none footer-link">Home</a></li>
+          <li class="mb-2"><a [routerLink]="'/catalog'" class=" text-decoration-none footer-link">Catalogue</a></li>
+          <li class="mb-2"><a [routerLink]="'/cart'" class=" text-decoration-none footer-link">Shopping Cart</a></li>
+        </ul>
+      </div>
+      
+      <!-- Customer Service -->
+      <div class="col-12 col-md-4">
+        <h5 class="fw-bold mb-3">Customer Service</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class=" text-decoration-none footer-link">FAQ</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none footer-link">Delivery & Returns</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none footer-link">Contact Us</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <hr class="border-secondary my-4">
+    
+    <div class="text-center text-muted small">
+      &copy; {{ currentYear }} Selection Furniture. All rights reserved.
+    </div>
+  </div>
+</footer>

@@ -7,6 +7,7 @@ import {
   ReactiveFormsModule,
   Validators
 } from '@angular/forms';
+import { ToastComponent, ToastType } from '../../components/ui/toast/toast.component';
 
 import { ProductService } from '../../services/product.service';
 import { AuthService } from '../../services/auth.service';
@@ -18,7 +19,7 @@ import { Review } from '../../models/review.model';
 @Component({
   selector: 'app-product-detail',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, RouterLink],
+  imports: [CommonModule, ReactiveFormsModule, RouterLink, ToastComponent],
   providers: [ProductService],
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.css'
@@ -32,6 +33,7 @@ export class ProductDetailComponent implements OnInit {
   private cartService = inject(CartService);
 
   toastMessage: string = '';
+  toastType: ToastType = 'success';
   private toastTimer: ReturnType<typeof setTimeout> | null = null;
 
   product: Product | null = null;
@@ -205,15 +207,16 @@ export class ProductDetailComponent implements OnInit {
 
   onAddToCart(product: Product): void {
     const added = this.cartService.addToCart(product);
-    this.showToast(
-      added
-        ? `"${product.title}" added to your cart.`
-        : `"${product.title}" is out of stock.`
-    );
+    if (added) {
+      this.showToast(`"${product.title}" added to your cart.`, 'success');
+    } else {
+      this.showToast(`"${product.title}" is out of stock.`, 'error');
+    }
   }
 
-  private showToast(message: string): void {
+  private showToast(message: string, type: ToastType = 'success'): void {
     this.toastMessage = message;
+    this.toastType = type;
     if (this.toastTimer) {
       clearTimeout(this.toastTimer);
     }

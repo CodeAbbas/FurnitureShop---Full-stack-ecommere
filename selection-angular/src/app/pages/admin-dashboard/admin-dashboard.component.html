@@ -16,9 +16,9 @@
       </button>
     </div>
   </div>
-
   <!-- Quick stats row -->
   <div class="row g-3 mb-4" *ngIf="!isLoading && !errorMessage">
+
     <div class="col-12 col-md-4">
       <div class="card border-0 shadow-sm">
         <div class="card-body">
@@ -27,23 +27,21 @@
         </div>
       </div>
     </div>
+
     <div class="col-12 col-md-4">
       <div class="card border-0 shadow-sm">
         <div class="card-body">
           <small class="text-muted text-uppercase d-block">Out of Stock</small>
-          <strong class="fs-3 text-danger">
-            {{ (products | slice:0).length === 0 ? 0 : ((products.length) - (products | slice:0).length) }}
-          </strong>
+          <strong class="fs-3 text-danger">{{ outOfStockCount }}</strong>
         </div>
       </div>
     </div>
+
     <div class="col-12 col-md-4">
       <div class="card border-0 shadow-sm">
         <div class="card-body">
           <small class="text-muted text-uppercase d-block">New Arrivals</small>
-          <strong class="fs-3 text-success">
-            {{ (products.length) }}
-          </strong>
+          <strong class="fs-3 text-success">{{ newArrivalCount }}</strong>
         </div>
       </div>
     </div>
